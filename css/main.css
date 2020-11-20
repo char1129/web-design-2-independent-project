@@ -1,9 +1,9 @@
 html {
   box-sizing: border-box;
   font-family: Lora, 'Times New Roman', serif;
-  font-size: 14px;
+  font-size: .8em;
   line-height: 1.2;
-  background-color: #F4EADE;
+  background-color: #FAF7F4;
 }
 
 *,
@@ -78,22 +78,34 @@ header {
 .banner {
   z-index: 100;
   grid-column: 1 / span 3;
-  grid-row: 2 / span 2;
-  /* align-self: center; */
+  grid-row: 2;
+  align-self: center;
   justify-self: center;
 }
 
 h1 {
   margin: 0;
   padding: 0;
-  font-style: 400;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.5rem;
 }
 
 h2 {
   margin: 0;
   padding: 0;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  margin: 0;
+  padding: 10px 0 2px 24px;
+  font-weight: 400;
+  font-size: 1rem;
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
 }
 
 main {
@@ -109,8 +121,22 @@ main {
 
 p {
   margin: 0;
-  padding: 0;
+  padding: 0 24px;
+  padding-bottom: 10px;
   align-self: baseline;
+}
+
+.drop-cap-indent {
+
+}
+
+.drop-cap {
+  float: left;
+  font-size: 34px;
+  /* font-weight: bold; */
+  vertical-align: middle;
+  background-color: darksalmon;
+  padding: 0;
 }
 
 article {
@@ -120,6 +146,7 @@ article {
 
 .highlight {
   justify-self: center;
+  text-align: center;
 }
 
 .highlighted {
@@ -130,38 +157,42 @@ article {
   justify-self: center;
 }
 
+textarea {
+  width: 24em;
+}
+
 
 @media only screen and (min-width: 25em) {
-  /* html {
-    font-size: 100%;
+
+  html {
     line-height: 1.3;
-    margin: 0 0 1.4rem;
-  } */
+  }
 
 }
 
 @media only screen and (min-width: 38em) {
-  /* html {
+
+  html {
     font-size: 110%;
     line-height: 1.4;
-    margin: 0 0 1.4rem;
-  } */
+  }
 
 }
 
 @media only screen and (min-width: 60em) {
-  /* html {
+
+  html {
     font-size: 120%;
     line-height: 1.5;
-    margin: 0 0 1.5rem;
-  } */
+  }
 
 
 }
 
 @media only screen and (min-width: 90em) {
-  /* html {
+
+  html {
     font-size: 130%;
-  } */
+  }
 
 }
