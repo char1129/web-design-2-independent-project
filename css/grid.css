@@ -1,0 +1,62 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.xs-1 {
+  width: 100%;
+}
+
+@media only screen and (min-width: 25em) {
+  /* html {
+    font-size: 100%;
+    line-height: 1.3;
+    margin: 0 0 1.4rem;
+  } */
+
+  .s-1 {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+  /* html {
+    font-size: 110%;
+    line-height: 1.4;
+    margin: 0 0 1.4rem;
+  } */
+
+  .m-1 {
+    width: 100%;
+  }
+
+  .m-1-2 {
+    width: 50%;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+  /* html {
+    font-size: 120%;
+    line-height: 1.5;
+    margin: 0 0 1.5rem;
+  } */
+
+  .xs-1 {
+    max-width: 33.3333%;
+  }
+
+  .l-1-3 {
+    width: 33.3333%;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+  /* html {
+    font-size: 130%;
+  } */
+
+}
