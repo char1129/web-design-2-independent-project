@@ -42,14 +42,74 @@ nav {
   margin: 0;
   padding: 0;
   z-index: 100;
-  grid-column: 3;
+  /* grid-column: 1 / -1;
   grid-row: 1;
-  justify-self: center;
+  justify-content: flex-end; */
+}
+
+.nav {
+  list-style-type: none;
+  display: none;
+}
+
+.nav a {
+  display: block;
+  padding: 0 0.25em;
+  margin: 0;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.nav-check {
+  position: absolute;
+  top: -3em;
+}
+
+.nav-check:checked ~ .nav {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 70px;
+}
+
+.nav-label {
+  cursor: pointer;
+  position: absolute;
+  width: 24px;
+  display: inline-block;
+  top: 10px;
+  right: 10px;
+}
+
+.nav-open,
+.nav-close {
+  display: block;
+  width: 100%;
+}
+
+.nav-close {
+ display: none;
+}
+
+.nav-check:checked ~ .nav-label .nav-open {
+  display: none;
+}
+
+.nav-check:checked ~ .nav-label .nav-close {
+  display: block;
 }
 
 ul {
   margin: 0;
   padding: 0;
+}
+
+nav ul li {
+  float: left;
 }
 
 ul li {
@@ -121,8 +181,7 @@ main {
 
 p {
   margin: 0;
-  padding: 0 24px;
-  padding-bottom: 10px;
+  padding: 0 24px 10px;
   align-self: baseline;
 }
 
@@ -143,18 +202,32 @@ article {
 .highlight {
   justify-self: center;
   text-align: center;
+  padding: 0 0 10px;
 }
 
 .highlighted {
   margin: 0;
   padding: 0;
-  /* display: inline-block; */
   width: auto;
   justify-self: center;
 }
 
-textarea {
-  width: 24em;
+fieldset {
+  padding: 0 12px;
+  margin: 0 24px;
+}
+
+legend {
+  padding: 0 0 10px;
+}
+
+.form-space {
+  margin: 0;
+  padding: 0 0 10px;
+}
+
+.note {
+  width: 18em;
 }
 
 

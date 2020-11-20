@@ -15,11 +15,15 @@
 <header role="header">
   <img class="hero-banner" src="https://via.placeholder.com/1440x950.png?text=Hero+Banner+Background+With+Logo" alt="">
 <nav role="nav">
-  <ul>
-    <li>1</li>
-    <li>2</li>
-    <li>3</li>
-    <li>4</li>
+  <input type="checkbox" class="nav-check" id="nav-check">
+  <label class="nav-label" for="nav-check">
+    <img class="nav-open"src="images/nav-icon.svg" alt="Open Navigation">
+    <img class="nav-close" src="images/nav-close.svg" alt="Close Navigation">
+  </label>
+  <ul class="nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="aboutme.html">About Me</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
   </ul>
 </nav>
 <div class="banner" role="banner">
@@ -39,14 +43,14 @@
   </ul>
   <form method="POST" action="https://formspree.io/f/xdopdjpz">
     <fieldset>
-      <legend class="push italic">Send me an email!</legend>
-      <div>
+      <legend>Send me an email!</legend>
+      <div class="form-space">
         <label for="email">Email</label>
-        <input id="email" type="email" required>
+        <input class="note" id="email" type="email" required>
       </div>
-      <div>
-        <label for="details">What would you like to say?</label>
-        <textarea id="details" name="message" required></textarea>
+      <div class="form-space">
+        <label for="note">What would you like to say?</label>
+        <textarea class="note" id="note" name="message" required></textarea>
         <input type="hidden" name="secret" value="What would you like to say?">
       </div>
       <div>
