@@ -6,76 +6,82 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/main.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,800;1,300;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,800;1,300;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
 
 </head>
 <body>
-<header role="header">
-  <img class="hero-banner" src="https://via.placeholder.com/1440x950.png?text=Hero+Banner+Background+With+Logo" alt="">
-<nav role="nav">
-  <ul>
-    <li>1</li>
-    <li>2</li>
-    <li>3</li>
-    <li>4</li>
-  </ul>
-</nav>
-<div class="banner" role="banner">
-  <h1>Sarah Charity </h1>
-  <h2>Graphic Designer</h2>
-</div>
-</header>
-<main>
-  <h2>Welcome</h2>
-  <p>This is my webpage where an introduction to who I am as a graphic designer will sit.</p>
-  <ul class="highlight">
-    <li><img class="highlighted" src="https://via.placeholder.com/150x150.png?text=Highlighted+Img" alt=""></li>
-    <li><img class="highlighted" src="https://via.placeholder.com/150x150.png?text=Highlighted+Img" alt=""></li>
-  </ul>
-  <form method="POST" action="https://formspree.io/mvorakyw">
-    <fieldset class="one">
-      <legend class="push italic">Personal details</legend>
-      <div class="push">
-        <label for="name">Name</label>
-        <input id="name" required>
-      </div>
-      <div class="push">
-        <label for="age">Age</label>
-        <input id="age" name="markbotreq" required>
-      </div>
-      <div class="push">
-        <label for="email">Email</label>
-        <input id="email" type="email" required>
-      </div>
-      <div class="push">
-        <label for="physicalfitness">Physical fitness</label>
-        <select id="physicalfitness" name="markbotreq">
-          <option>Super-human</option>
-          <option>Fit as a fiddle</option>
-          <option>Not terribly strong</option>
-          <option>A little couch-potato-y</option>
-        </select>
-      </div>
-      <div>
-        <label for="address">Address</label>
-        <textarea id="address" required></textarea>
-      </div>
-    </fieldset>
-    <fieldset>
-      <legend class="push italic">Mission statement</legend>
-      <div class="push">
-        <label for="details">Why do you want to go to Mars?</label>
-        <textarea id="details" name="message" required></textarea>
-        <input type="hidden" name="secret" value="Request to join the mission">
-      </div>
-      <div>
-        <button class="btn btn-light center" type="submit">Register for the trip!</button>
-      </div>
-    </fieldset>
-  </form>
+
+  <header role="header">
+    <img class="hero-banner" src="https://via.placeholder.com/1440x950.png?text=Hero+Banner+Background+With+Logo" alt="">
+    <nav role="nav">
+      <input type="checkbox" class="nav-check" id="nav-check">
+      <label class="nav-label" for="nav-check">
+        <img class="nav-open"src="images/nav-icon.svg" alt="Open Navigation">
+        <img class="nav-close" src="images/nav-close.svg" alt="Close Navigation">
+      </label>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutme.html">About Me</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <div class="banner" role="banner">
+      <h1>About Me</h1>
+      <h2>Lets get personal.</h2>
+    </div>
+  </header>
+
+  <main role="main">
+    <h3 role="welcome">Welcome</h3>
+    <p role="introduction"><span class="drop-cap">T</span>his is my webpage where an introduction to who I am as a graphic designer will sit. This is my webpage where an introduction to who I am as a graphic designer will sit. This is my webpage where an introduction to who I am as a graphic designer will sit. This is my webpage where an introduction to who I am as a graphic designer will sit.</br></br> This is my webpage where an introduction to who I am as a graphic designer will sit. This is my webpage where an introduction to who I am as a graphic designer will sit. This is my webpage where an introduction to who I am as a graphic designer will sit. This is my webpage where an introduction to who I am as a graphic designer will sit.</p>
+    <article>
+      <h3>Resumé</h3>
+      <p>Enter resume information here in a table</p>
+    </article>
   </main>
 
-</body>
-</html>
+  <section role="social">
+    <h3 class="social-media">Social Media</h3></caption>
+    <ul>
+      <li><img src="https://via.placeholder.com/50x50.png?text=Social+Media+Icon" alt="">
+        Instagram</li>
+        <li><img src="https://via.placeholder.com/50x50.png?text=Social+Media+Icon" alt="">
+          Linked-In</li>
+          <li><img src="https://via.placeholder.com/50x50.png?text=Social+Media+Icon" alt="">
+          Facebook</li>
+          </ul>
+        </section>
+
+        <aside class="email" role="email">
+          <form method="POST" action="https://formspree.io/f/xdopdjpz">
+            <fieldset>
+              <legend>Send me an email!</legend>
+              <div class="form-space">
+                <label for="email">Email</label>
+                <input class="note" id="email" type="email" required>
+              </div>
+              <div class="form-space">
+                <label for="note">What would you like to say?</label>
+                <textarea class="note" id="note" name="message" required></textarea>
+                <input type="hidden" name="secret" value="What would you like to say?">
+              </div>
+              <div>
+                <button class="btn btn-light center" type="submit">Send</button>
+              </div>
+            </fieldset>
+          </form>
+        </aside>
+
+        <footer role="footer">
+          <ul class="footer-nav">
+            <li><a href="index.html">Icon</a></li>
+            <li><a href="aboutme.html">Legal</a></li>
+            <li><a href="gallery.html">Back to Top</a></li>
+          </ul>
+        </footer>
+
+
+      </body>
+      </html>
