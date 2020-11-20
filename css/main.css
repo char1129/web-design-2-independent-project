@@ -182,7 +182,7 @@ main {
   "Introduction"
   "Introduction"
   "Highlights"
-  "Highlights"
+  "Highlights";
   grid-template-columns: 1fr;
   grid-template-rows: auto;
 }
@@ -300,7 +300,7 @@ footer {
 }
 
 footer ul li {
-  display: inline-block
+  display: inline-block;
   padding: 0 12px;
 }
 
