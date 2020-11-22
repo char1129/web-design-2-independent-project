@@ -30,7 +30,7 @@ nav {
 .nav-check:checked ~ .nav {
   display: inline-flex;
   position: absolute;
-  top: 15px;
+  top: 25px;
   right: 70px;
 }
 
