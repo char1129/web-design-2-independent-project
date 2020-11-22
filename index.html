@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <title>Sarah Charity Designs</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="css/main.css" rel="stylesheet">
+  <link href="main.css" rel="stylesheet">
+  <link href="nav.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,800;1,300;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -13,9 +14,14 @@
 </head>
 <body>
 
-  <header role="header">
-    <img class="hero-banner" src="https://via.placeholder.com/1440x1080.png?text=Hero+Banner+Background+With+Logo" alt="">
-    <nav role="nav">
+  <header role="hero-banner">
+    <div class="title"><h1>Sarah Charity<h1>
+    <h2>Graphic Designer</h2></div>
+    <div class="wrapper">
+    <img class ="banner"src="https://via.placeholder.com/1980x1080.png?text=Featured+Img" alt="">
+  </div>
+
+    <nav><nav role="nav">
       <input type="checkbox" class="nav-check" id="nav-check">
       <label class="nav-label" for="nav-check">
         <img class="nav-open"src="images/nav-icon.svg" alt="Open Navigation">
@@ -27,34 +33,30 @@
         <li><a href="gallery.html">Gallery</a></li>
       </ul>
     </nav>
-    <div class="banner" role="banner">
-      <h1>Sarah Charity</h1>
-      <h2>Graphic Designer</h2>
-    </div>
   </header>
 
   <main role="main">
+    <h3>Welcome</h3>
+    <p role="introduction"><span class="drop-cap">T</span>his is my webpage where an introduction to who I am as a graphic designer will sit. This is my webpage where an introduction to who I am as a graphic designer will sit. This is my webpage where an introduction to who I am as a graphic designer will sit. This is my webpage where an introduction to who I am as a graphic designer will sit.</p>
+    <p>This is my webpage where an introduction to who I am as a graphic designer will sit. This is my webpage where an introduction to who I am as a graphic designer will sit. This is my webpage where an introduction to who I am as a graphic designer will sit. This is my webpage where an introduction to who I am as a graphic designer will sit.</p>
 
-    <h3 role="welcome">Welcome</h3>
-    <p role="introduction"><span class="drop-cap">T</span>his is my webpage where an introduction to who I am as a graphic designer will sit. This is my webpage where an introduction to who I am as a graphic designer will sit. This is my webpage where an introduction to who I am as a graphic designer will sit. This is my webpage where an introduction to who I am as a graphic designer will sit.</br></br> This is my webpage where an introduction to who I am as a graphic designer will sit. This is my webpage where an introduction to who I am as a graphic designer will sit. This is my webpage where an introduction to who I am as a graphic designer will sit. This is my webpage where an introduction to who I am as a graphic designer will sit.</p>
-
-    <ul class="flex highlight">
+    <ul>
       <li><img src="https://via.placeholder.com/150x150.png?text=Featured+Img" alt=""><img src="https://via.placeholder.com/150x150.png?text=Featured+Img" alt=""></li>
       <li><img src="https://via.placeholder.com/150x150.png?text=Featured+Img" alt=""><img src="https://via.placeholder.com/150x150.png?text=Featured+Img" alt=""></li>
     </ul>
 
   </main>
 
-  <section role="aside">
+  <section>
     <h3>Social Media</h3>
-    <ul class="flex-2">
-      <li><img class="social" src="https://via.placeholder.com/50x50.png?text=Social+Media+Icon" alt=""><p>Instagram</p></li>
-        <li><img class="social" src="https://via.placeholder.com/50x50.png?text=Social+Media+Icon" alt=""><p>Linked-In</p></li>
-          <li><img class="social" src="https://via.placeholder.com/50x50.png?text=Social+Media+Icon" alt=""><p>Facebook</p></li>
+    <ul>
+      <li><img src="https://via.placeholder.com/50x50.png?text=Social+Media+Icon" alt=""><p>Instagram</p></li>
+        <li><img src="https://via.placeholder.com/50x50.png?text=Social+Media+Icon" alt=""><p>Linked-In</p></li>
+          <li><img src="https://via.placeholder.com/50x50.png?text=Social+Media+Icon" alt=""><p>Facebook</p></li>
           </ul>
         </section>
 
-        <aside class="email" role="email">
+        <aside role="email">
           <form method="POST" action="https://formspree.io/f/xdopdjpz">
             <fieldset>
               <legend>Send me an email!</legend>
@@ -75,7 +77,7 @@
         </aside>
 
         <footer role="footer">
-          <ul class="footer-nav">
+          <ul>
             <li><a href="index.html">Icon</a></li>
             <li><a href="aboutme.html">Legal</a></li>
             <li><a href="gallery.html">Back to Top</a></li>
@@ -83,5 +85,5 @@
         </footer>
 
 
-      </body>
-      </html>
+</body>
+</html>
