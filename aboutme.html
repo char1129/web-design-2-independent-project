@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Sarah Charity Designs</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="css/main.css" rel="stylesheet">
+  <link href="css/main2.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,800;1,300;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -13,8 +13,81 @@
 </head>
 <body>
 
-  <header role="header">
-    <img class="hero-banner" src="https://via.placeholder.com/1440x950.png?text=Hero+Banner+Background+With+Logo" alt="">
+  <div class="banner">
+  <h2>Sarah Charity</h2>
+  <img src="https://via.placeholder.com/1980x1080.png?text=Featured+Img" alt="">
+  </div>
+
+    <div class="flex">
+    <h2>Flexbox</h2>
+    <p>parent effects child directly</p>
+  </div>
+    <div class="flex">
+    <h2>child</h2>
+    <p>stacks its children</p>
+    </div>
+
+  <dl>
+  <div>
+    <dt>Triceratops</dt>
+    <dd>A dinosaur with bony three horns on its head.</dd>
+  </div>
+  <div>
+    <dt>Stegosaurus</dt>
+    <dd>A medium-sized herbivore with back plates.</dd>
+  </div>
+  <div>
+    <dt>Ankylosaurus</dt>
+    <dd>The dinosaur with a club tail & armoured back.</dd>
+  </div>
+</dl>
+
+<ul>
+<div>
+  <li>intrinsic layout</li>
+  <li>uses repeat</li>
+</div>
+<div>
+  <li>powerful</li>
+  <li>and flexible</li>
+</div>
+<div>
+  <li>can be used</li>
+  <li>with responsive design</li>
+</div>
+</ul>
+
+
+<div class="queries">
+  <header>Queries Test</header>
+  <main>Responsive</main>
+  <aside>Grid</aside>
+  <footer>Layout</footer>
+</div>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <header role="header">
+    <img class="hero-banner" src="https://via.placeholder.com/1440x1080.png?text=Hero+Banner+Background+With+Logo" alt="">
     <nav role="nav">
       <input type="checkbox" class="nav-check" id="nav-check">
       <label class="nav-label" for="nav-check">
@@ -28,33 +101,35 @@
       </ul>
     </nav>
     <div class="banner" role="banner">
-      <h1>About Me</h1>
-      <h2>Lets get personal.</h2>
+      <h1>Sarah Charity</h1>
+      <h2>Graphic Designer</h2>
     </div>
   </header>
 
   <main role="main">
-    <h3 role="welcome">Welcome</h3>
-    <p role="introduction"><span class="drop-cap">T</span>his is my webpage where an introduction to who I am as a graphic designer will sit. This is my webpage where an introduction to who I am as a graphic designer will sit. This is my webpage where an introduction to who I am as a graphic designer will sit. This is my webpage where an introduction to who I am as a graphic designer will sit.</br></br> This is my webpage where an introduction to who I am as a graphic designer will sit. This is my webpage where an introduction to who I am as a graphic designer will sit. This is my webpage where an introduction to who I am as a graphic designer will sit. This is my webpage where an introduction to who I am as a graphic designer will sit.</p>
-    <article>
-      <h3>Resumé</h3>
-      <p>Enter resume information here in a table</p>
-    </article>
+    <h3>Welcome</h3>
+    <p><span class="drop-cap">T</span>his is my webpage where an introduction to who I am as a graphic designer will sit. This is my webpage where an introduction to who I am as a graphic designer will sit. This is my webpage where an introduction to who I am as a graphic designer will sit. This is my webpage where an introduction to who I am as a graphic designer will sit.</br></br> This is my webpage where an introduction to who I am as a graphic designer will sit. This is my webpage where an introduction to who I am as a graphic designer will sit. This is my webpage where an introduction to who I am as a graphic designer will sit. This is my webpage where an introduction to who I am as a graphic designer will sit.</p>
+    <ul>
+      <li><img src="https://via.placeholder.com/150x150.png?text=Highlighted+Img" alt=""></li>
+      <li><img src="https://via.placeholder.com/150x150.png?text=Highlighted+Img" alt=""></li>
+      <li><img src="https://via.placeholder.com/150x150.png?text=Highlighted+Img" alt=""></li>
+      <li><img src="https://via.placeholder.com/150x150.png?text=Highlighted+Img" alt=""></li>
+    </ul>
   </main>
 
-  <section role="social">
-    <h3 class="social-media">Social Media</h3></caption>
+  <section>
+    <h3>Social Media</h3>
     <ul>
-      <li><img src="https://via.placeholder.com/50x50.png?text=Social+Media+Icon" alt="">
-        Instagram</li>
-        <li><img src="https://via.placeholder.com/50x50.png?text=Social+Media+Icon" alt="">
-          Linked-In</li>
-          <li><img src="https://via.placeholder.com/50x50.png?text=Social+Media+Icon" alt="">
-          Facebook</li>
+      <li><img src="https://via.placeholder.com/50x50.png?text=Social+Media+Icon" alt=""></li>
+        <li>Instagram</li>
+        <li><img src="https://via.placeholder.com/50x50.png?text=Social+Media+Icon" alt=""></li>
+          <li>Linked-In</li>
+          <li><img src="https://via.placeholder.com/50x50.png?text=Social+Media+Icon" alt=""></li>
+          <li>Facebook</li>
           </ul>
         </section>
 
-        <aside class="email" role="email">
+        <aside>
           <form method="POST" action="https://formspree.io/f/xdopdjpz">
             <fieldset>
               <legend>Send me an email!</legend>
@@ -75,7 +150,7 @@
         </aside>
 
         <footer role="footer">
-          <ul class="footer-nav">
+          <ul>
             <li><a href="index.html">Icon</a></li>
             <li><a href="aboutme.html">Legal</a></li>
             <li><a href="gallery.html">Back to Top</a></li>
@@ -83,5 +158,5 @@
         </footer>
 
 
-      </body>
+      </body> -->
       </html>

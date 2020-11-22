@@ -1,3 +1,9 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
 html {
   box-sizing: border-box;
   font-family: Lora, 'Times New Roman', serif;
@@ -34,6 +40,7 @@ body {
 }
 
 header {
+  grid-area: header;
   grid-column: 1 / -1;
   grid-row: 1;
   margin: 0;
@@ -51,15 +58,13 @@ header {
 }
 
 .hero-banner {
-  /* position: relative; */
+  position: relative;
   grid-column: 1 / -1;
   grid-row: 1 / span 3;
   justify-content: center;
   align-content: center;
   min-width: 350px;
-  max-width: 750px;
-  width: initial;
-  justify-self: center;
+  width: 100%;
 }
 
 nav {
@@ -96,7 +101,7 @@ nav {
 .nav-check:checked ~ .nav {
   display: block;
   position: absolute;
-  top: 10px;
+  top: 25px;
   right: 70px;
 }
 
@@ -105,8 +110,8 @@ nav {
   position: absolute;
   width: 24px;
   display: inline-block;
-  top: 10px;
-  right: 10px;
+  top: 25px;
+  right: 25px;
 }
 
 .nav-open,
@@ -140,6 +145,7 @@ ul li {
   margin: 0;
   padding: 0;
   display: inline-block;
+  align-self: center;
 }
 
 .banner {
@@ -167,8 +173,11 @@ h2 {
 }
 
 h3 {
+  grid-area: welcome;
+  grid-column: 1 / -1;
+  grid-row: 1;
   margin: 0;
-  padding: 3rem 0 15px 24px;
+  padding: 3rem 0 15px;
   font-weight: 400;
   font-size: 1.3rem;
   font-family: Montserrat, Helvetica, Arial, sans-serif;
@@ -176,6 +185,7 @@ h3 {
 }
 
 main {
+  grid-area: main;
   grid-column: 1 / -1;
   grid-row: 2;
   margin: 0;
@@ -185,15 +195,18 @@ main {
   "Welcome"
   "Introduction"
   "Introduction"
-  "Highlights"
-  "Highlights";
+  "Highlights Highlights"
+  "Highlights Highlights";
   grid-template-columns: 1fr;
   grid-template-rows: auto;
 }
 
 p {
+  grid-area: introduction;
+  grid-column: 1 / -1;
+  grid-row: 2 / span 2;
   margin: 0;
-  padding: 0 24px 4rem;
+  padding: 0 0 4rem;
   align-self: baseline;
 }
 
@@ -201,23 +214,40 @@ p {
 .drop-cap {
   position: relative;
   float: left;
-  font-size: 34px;
-  margin: 0 2px -.5em -6px;
-  padding: 0 5px 0 5px;
+  font-size: 2.75em;
+  margin: -.025em -.5em -.75em -.6em;
+  padding: 0 .6em;
   top: -.15em;
 }
 
 .highlight {
+  grid-area: highlights;
   grid-column: 1 / -1;
   grid-row: 4 / span 2;
   text-align: center;
+  grid-template-rows: repeat(auto-fit, minmax(min(25rem, 100%), 1fr));
   padding: 0 0 3rem;
 }
 
 main {
   padding: 0 24px;
 }
-main ul {
+
+.flex, .flex-2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex li {
+  width: 50%;
+}
+
+.flex-2 li {
+  width: 33.33%;
+  text-align: center;
+}
+
+/* main ul {
   display: flex;
   align-items: stretch;
   justify-content: space-between;
@@ -234,9 +264,13 @@ main ul {
 main ul li img {margin: 0;
   padding: 0;
   width: auto;
-}
+} */
 
+.social {
+  max-width: 150px;
+}
 section {
+  grid-area: social;
   grid-column: 1;
   grid-row: 3;
   margin: 0 24px;
@@ -249,28 +283,15 @@ section h3 {
 }
 
 section ul {
-  display: flex;
-  align-items: stretch;
-  justify-content: space-between;
+
   flex-direction: row;
   flex-wrap: nowrap;
   padding: 0 0 3rem;
   margin: 0;
 }
 
-section ul li {
-    display: block;
-    flex: 0 1 auto;
-    list-style-type: none;
-    padding: 0;
-    font-size: 11px
-  }
-
-section ul li img {
-  width: auto;
-}
-
 aside {
+  grid-area: email;
   grid-column: 1 / -1;
   grid-row: 4;
 }
@@ -298,6 +319,7 @@ legend {
 }
 
 footer {
+  grid-area: footer;
   grid-column: 1 / -1;
   grid-row: 5;
   padding: 2em 0;
@@ -327,18 +349,9 @@ footer ul li {
 
 @media only screen and (min-width: 60em) {
 
-  html {
-    font-size: 120%;
-    line-height: 1.5;
-  }
-
 
 }
 
 @media only screen and (min-width: 90em) {
-
-  html {
-    font-size: 130%;
-  }
 
 }
