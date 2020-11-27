@@ -83,7 +83,14 @@ ul li {
   margin: 0;
   padding: 0;
   display: inline-block;
-  align-self: center;
+  /* align-self: center; */
+}
+
+.flex li img {
+  width: 100%;
+  max-width: 300px;
+  max-height: 300px;
+  padding: .25em 0;
 }
 
 .banner {
