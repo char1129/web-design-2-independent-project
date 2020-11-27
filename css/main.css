@@ -8,9 +8,8 @@ html {
   box-sizing: border-box;
   font-family: Lora, 'Times New Roman', serif;
   font-size: .8em;
-  line-height: 1.3;
+  line-height: 1.5;
   background-color: #FAF7F4;
-  overflow: hidden;
 }
 
 *,
@@ -25,15 +24,6 @@ img {
 }
 
 body {
-  z-index: 1;
-  height: 100vh;
-overflow-y: auto;
-overflow-x: hidden;
--webkit-overflow-scrolling: touch;
-
--webkit-perspective: 1px;
-perspective: 1px;
-
   margin: 0;
   padding: 0;
   display: grid;
@@ -107,6 +97,7 @@ h1 {
   font-style: normal;
   font-weight: normal;
   font-size: 3rem;
+  line-height: 1;
 }
 
 h2 {
@@ -122,7 +113,7 @@ h3 {
   grid-column: 1 / -1;
   grid-row: 1;
   margin: 0;
-  padding: 0;
+  padding: 0 0 2rem;
   font-weight: 400;
   font-size: 1.3rem;
   font-family: Montserrat, Helvetica, Arial, sans-serif;
@@ -175,7 +166,6 @@ p {
 }
 
 main {
-  z-index: 2;
   padding: 0 24px;
 }
 
@@ -197,7 +187,6 @@ main {
   max-width: 150px;
 }
 section {
-  z-index: 2;
   grid-area: social;
   grid-column: 1;
   grid-row: 3;
@@ -206,13 +195,12 @@ section {
 }
 
 section h3 {
-  z-index: 2;
   padding: 0 0 24px;
   margin: 0;
 }
 
 section ul {
-  z-index: 2;
+
   flex-direction: row;
   flex-wrap: nowrap;
   padding: 0 0 3rem;
@@ -220,21 +208,18 @@ section ul {
 }
 
 aside {
-  z-index: 2;
   grid-area: email;
   grid-column: 1 / -1;
   grid-row: 4;
 }
 
 fieldset {
-  z-index: 2;
   padding: 0 12px;
   margin: 0 24px;
   border: none;
 }
 
 legend {
-  z-index: 2;
   padding: 0 0 10px;
   font-size: 400;
   font-family: Montserrat, Helvetica, Arial, sans-serif;
@@ -268,6 +253,10 @@ footer ul li {
     line-height: 1.3;
   }
 
+  h1 {
+    line-height: 1.3;
+  }
+
 }
 
 @media only screen and (min-width: 38em) {
@@ -286,29 +275,4 @@ footer ul li {
 
 @media only screen and (min-width: 90em) {
 
-}
-
-
-.parallax-group {
-  grid-area: header;
-  grid-column: 1 / -1;
-  grid-row: 1;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-
-}
-
-.back {
-  -webkit-transform: translateZ(-1px) scale(2);
-  transform: translateZ(-1px) scale(2);
-  position: relative;
-  top: calc(((100vh - 66.67vw) / 4) * -2);
-  display: block;
-  grid-column: 1 / -1;
-  grid-row: 1;
-}
-
-.front {
-  position: relative;
-  z-index: 2;
 }
