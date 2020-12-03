@@ -32,8 +32,6 @@ body {
   grid-template-areas:
   "header"
   "main"
-  "social"
-  "email"
   "footer";
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
@@ -146,8 +144,7 @@ main {
   "Welcome"
   "Introduction"
   "Introduction"
-  "Highlights Highlights"
-  "Highlights Highlights";
+  "Resume";
   grid-template-columns: 1fr;
   grid-template-rows: auto;
 }
@@ -206,70 +203,24 @@ width: 100%;
   text-align: center;
 }
 
-.social {
-  max-width: 150px;
-  padding: 0 .25em;
-}
-section {
-  grid-area: social;
-  grid-column: 1;
-  grid-row: 3;
-  margin: 0 24px;
-  padding: 0;
-}
-
-section h3 {
-  padding: 0 0 24px;
-  margin: 0;
-}
-
-section ul {
-
-  flex-direction: row;
-  flex-wrap: nowrap;
-  padding: 0;
-  margin: 0;
-}
-
-aside {
-  grid-area: email;
-  grid-column: 1 / -1;
-  grid-row: 4;
-}
-
-fieldset {
-  padding: 0 12px;
-  margin: 0 24px;
-  border: none;
-}
-
-legend {
-  padding: 0 0 10px;
-  font-size: 400;
-  font-family: Montserrat, Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-}
-
-.form-space {
-  margin: 0;
-  padding: 0 0 10px;
-}
-
-.note {
-  width: 18em;
-}
-
 footer {
   grid-area: footer;
   grid-column: 1 / -1;
-  grid-row: 5;
+  grid-row: 3;
   padding: 2em 0;
 }
 
 footer ul li {
   display: inline-block;
   padding: 0;
+}
 
+caption {
+padding: 3rem 0 0
+}
+
+th {
+  width: 100%;
 }
 
 @media only screen and (min-width: 25em) {
