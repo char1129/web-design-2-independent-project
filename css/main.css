@@ -163,6 +163,12 @@ p {
   align-self: baseline;
 }
 
+.featuredwork {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
 .highlight {
   grid-column: 1 / -1;
   grid-row: 4 / span 2;
@@ -239,7 +245,6 @@ footer {
   grid-area: footer;
   grid-column: 1 / -1;
   grid-row: 5;
-  padding: 2em 0;
 }
 
 footer ul li {
