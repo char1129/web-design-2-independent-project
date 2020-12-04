@@ -5,9 +5,8 @@
   <title>Sarah Charity Designs</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/type.css" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet">
   <link href="css/nav.css" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet">
+  <link href="css/about.css" rel="stylesheet">
   <link href="css/accessibility.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,800;1,300;1,400;1,700&display=swap" rel="stylesheet">
@@ -18,23 +17,24 @@
 </head>
 <body>
 
-  <header role="header">
-    <img class="hero-banner" src="https://via.placeholder.com/1920x1080.png?text=Hero+Banner+Background+With+Logo" alt="">
-    <nav role="nav">
+  <header>
+    <nav>
       <input type="checkbox" class="nav-check" id="nav-check">
       <label class="nav-label" for="nav-check">
-        <img class="nav-open"src="images/nav-icon.svg" alt="Open Navigation">
+        <img class="nav-open" src="images/nav-icon.svg" alt="Open Navigation">
         <img class="nav-close" src="images/nav-close.svg" alt="Close Navigation">
       </label>
       <ul class="nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="aboutme.html">About Me</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="index.html" aria-label="Go to Homepage">Home</a></li>
+        <li><a href="aboutme.html" aria-label="Go to About Me">About Me</a></li>
+        <li><a href="gallery.html" aria-label="Go to Gallery">Gallery</a></li>
       </ul>
     </nav>
-    <div class="banner" role="banner">
-      <h1>About Me</h1>
-      <h2>Lets get personal.</h2>
+    <img class="hero-banner" src="https://via.placeholder.com/1920x1080.png?text=Hero+Banner+Background+With+Logo" alt="">
+    <div class="banner">
+      <h1><span class="im">this is</span> About Me</h1>
+      <h2>Lets get personal</h2>
+      <h3>(almost uncomfortably close)</h3>
     </div>
   </header>
 

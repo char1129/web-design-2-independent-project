@@ -5,7 +5,6 @@
   <title>Sarah Charity Designs</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/type.css" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet">
   <link href="css/nav.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <link href="css/accessibility.css" rel="stylesheet">
@@ -19,20 +18,27 @@
 </head>
 <body>
 
+  <ul class="skip-links">
+    <li><a href="#main" tabindex="0">Jump to middle of page content</a></li>
+    <li><a href="#nav" tabindex="0">Jump to navigation content</a></li>
+    <li><a href="#social" tabindex="0">Jump to social media</a></li>
+    <li><a href="#footer" tabindex="0">Jump to footer</a></li>
+  </ul>
+
   <header>
-    <nav>
+    <nav role="navigation" id="nav" tabindex="0">
       <input type="checkbox" class="nav-check" id="nav-check">
       <label class="nav-label" for="nav-check">
         <img class="nav-open" src="images/nav-icon.svg" alt="Open Navigation">
         <img class="nav-close" src="images/nav-close.svg" alt="Close Navigation">
       </label>
       <ul class="nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="aboutme.html">About Me</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="index.html" aria-label="Go to Homepage">Home</a></li>
+        <li><a href="aboutme.html" aria-label="Go to About Me">About Me</a></li>
+        <li><a href="gallery.html" aria-label="Go to Gallery">Gallery</a></li>
       </ul>
     </nav>
-    <img class="hero-banner" src="https://via.placeholder.com/1920x1080.png?text=Hero+Banner+Background+With+Logo" alt="">
+    <img class="hero-banner" src="https://via.placeholder.com/1920x1080.png?text=Hero+Banner+Background+With+Logo" alt="" aria-details="#banner">
     <div class="banner">
       <h1><span class="im">I'm</span> Everything</h1>
       <h2>but the kitchen sink</h2>
@@ -40,30 +46,30 @@
     </div>
   </header>
 
-  <main>
+  <main role="main" id="main">
     <h4>Welcome</h4>
     <p><span class="drop-cap">M</span>y name is Sarah Charity and I am a second year Graphic Designer, going into my second semester at Algonquin College.</p>
     <p class="indent">My formal education includes logo/web/ux and ui design, print and web layouts (all of which are optimized for accessibility) and have aptitudes for concept sketching, creative brainstorming, design process and team management. By the end of this year I will also have knowledge of effective branding and marketing techniques, along with more extensive education in previously acquired skills.</p>
 
     <ul class="flex highlight">
-      <li><img src="https://via.placeholder.com/150x150.png?text=Featured+Img" alt=""></li>
-      <li><img class="hidden1" src="https://via.placeholder.com/150x150.png?text=Featured+Img" alt=""></li>
-      <li><img class="hidden2" src="https://via.placeholder.com/150x150.png?text=Featured+Img" alt=""></li>
-      <li><img class="hidden3" src="https://via.placeholder.com/150x150.png?text=Featured+Img" alt=""></li>
+      <li><a href="/images/placeholder.jpeg" target="_blank" rel="noopener noreferrer"><img src="https://via.placeholder.com/150x150.png?text=Featured+Img" alt="artwork of" aria-details="#featured-artwork"></a><p class="caption">Image 1</p></li>
+      <li><a href="/images/placeholder.jpeg" target="_blank" rel="noopener noreferrer"><img class="hidden1" src="https://via.placeholder.com/150x150.png?text=Featured+Img" alt="artwork of" aria-details="#featured-artwork"></a><p class="caption">Image 1</p></li>
+      <li><a href="/images/placeholder.jpeg" target="_blank" rel="noopener noreferrer"><img class="hidden2" src="https://via.placeholder.com/150x150.png?text=Featured+Img" alt="artwork of" aria-details="#featured-artwork"></a><p class="caption">Image 1</p></li>
+      <li><a href="/images/placeholder.jpeg" target="_blank" rel="noopener noreferrer"><img class="hidden3" src="https://via.placeholder.com/150x150.png?text=Featured+Img" alt="artwork of" aria-details="#featured-artwork"></a><p class="caption">Image 1</p></li>
     </ul>
 
   </main>
 
-  <section>
+  <section role="complementary" id="social">
     <h4>Social Media</h4>
     <ul class="flex-2">
-      <li><img class="social" src="https://via.placeholder.com/50x50.png?text=Social+Media+Icon" alt="">
+      <li><a href="http://www.instagram.com"><img class="social" src="https://via.placeholder.com/50x50.png?text=Social+Media+Icon" alt="" aria-details="#instagram-icon"></a>
         <p class="hidelabel">Instagram</p>
       </li>
-      <li><img class="social" src="https://via.placeholder.com/50x50.png?text=Social+Media+Icon" alt="">
+      <li><a href="http://www.linkedin.com"><img class="social" src="https://via.placeholder.com/50x50.png?text=Social+Media+Icon" alt="" aria-details="#linkedin-icon"></a>
         <p class="hidelabel">Linked-In</p>
       </li>
-      <li><img class="social" src="https://via.placeholder.com/50x50.png?text=Social+Media+Icon" alt="">
+      <li><a href="http://www.facebook.com"><img class="social" src="https://via.placeholder.com/50x50.png?text=Social+Media+Icon" alt="" aria-details="#facebook-icon"></a>
         <p class="hidelabel">Facebook</p>
       </li>
     </ul>
@@ -89,7 +95,7 @@
     </form>
   </aside>
 
-  <footer class="aboutmefooter">
+  <footer class="aboutmefooter" role="contentinfo" id="footer">
     <ul class="footer-nav">
       <li><a href="index.html">Icon</a></li>
       <li><a href="aboutme.html">Legal</a></li>
