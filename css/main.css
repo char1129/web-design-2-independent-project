@@ -6,7 +6,7 @@
 
 html {
   box-sizing: border-box;
-  background-color: #FAF7F4;
+  background-color: #faf7f4;
 }
 
 *,
@@ -70,6 +70,9 @@ header {
   min-height: 750px;
   max-height: 750px;
   overflow: hidden;
+  filter: grayscale(100%);
+  transition: all .2s linear;
+  /* width: 100%; */
 }
 
 ul {
@@ -99,7 +102,7 @@ ul li {
   margin: 0;
   padding: 10px 25px 15px;
   border-radius: 10px;
-  background:rgba(255, 255 , 255, 0.5);
+  background:rgba(255, 255, 255, .5);
 }
 
 .banner h3 {
@@ -110,13 +113,6 @@ ul li {
 .banner:focus h3 {
   bottom: 0;
   font-size: 1.5rem;
-}
-
-.hero-banner {
-  filter: grayscale(100%);
-  transition: all .2s linear;
-  width: 100%;
-  margin: 0;
 }
 
 .hero-banner:hover,
@@ -148,11 +144,10 @@ main {
   grid-column: 1 / -1;
   grid-row: 2;
   margin: 0;
-  padding: 0;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  padding: 0 24px;
+  padding: 0 1.5rem;
   /* grid-template-rows: repeat(auto-fit, minmax(20rem, 1fr)); */
 }
 
@@ -262,7 +257,7 @@ footer ul li {
     display: flex;
   } */
 
-  .flex ul{
+  .flex ul {
     display: grid;
     grid-template-areas:
     "first first"
