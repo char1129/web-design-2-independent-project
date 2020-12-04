@@ -185,6 +185,7 @@ p {
   max-width: 150px;
   padding: 0 .25em;
 }
+
 section {
   grid-area: social;
   grid-column: 1;
@@ -240,7 +241,6 @@ footer {
 footer ul li {
   display: inline-block;
   padding: 0;
-
 }
 
 @media only screen and (min-width: 25em) {
@@ -254,7 +254,7 @@ footer ul li {
   }
 
   /* .flex {
-    display: flex;
+  display: flex;
   } */
 
   .flex ul {
@@ -265,7 +265,7 @@ footer ul li {
   }
 
   .flex li {
-  display: inline-block;
+    display: inline-block;
   }
 
   .hidden1 {
@@ -290,8 +290,8 @@ footer ul li {
   }
 
   /* .flex-2 {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
   } */
 
   .flex {
@@ -307,12 +307,13 @@ footer ul li {
     display: block;
     width: 100%;
   }
+
 }
 
 @media only screen and (min-width: 60em) {
 
- h1 {
-   font-size: 5rem;
+  h1 {
+    font-size: 5rem;
   }
 
   h2 {
@@ -326,6 +327,7 @@ footer ul li {
   .hidelabel {
     display: none;
   }
+
 }
 
 @media only screen and (min-width: 90em) {
@@ -336,7 +338,7 @@ footer ul li {
   }
 
   /* p {
-    font-size: 2rem;
+  font-size: 2rem;
   } */
 
   .flex {
