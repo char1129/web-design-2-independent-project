@@ -27,11 +27,11 @@ body {
   padding: 0;
   display: grid;
   grid-template-areas:
-  "header"
-  "main"
-  "social"
-  "email"
-  "footer";
+    "header"
+    "main"
+    "social"
+    "email"
+    "footer";
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   justify-content: center;
@@ -72,6 +72,7 @@ header {
   overflow: hidden;
   filter: grayscale(100%);
   transition: all .2s linear;
+
   /* width: 100%; */
 }
 
@@ -88,6 +89,7 @@ ul li {
   margin: 0;
   padding: 0;
   display: inline-block;
+
   /* align-self: center; */
 }
 
@@ -118,6 +120,7 @@ ul li {
 .hero-banner:hover,
 .hero-banner:focus {
   filter: grayscale(0);
+
   /* transform: scaleY(1.5); */
 }
 
@@ -148,6 +151,7 @@ main {
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   padding: 0 1.5rem;
+
   /* grid-template-rows: repeat(auto-fit, minmax(20rem, 1fr)); */
 }
 
@@ -163,6 +167,7 @@ p {
   grid-column: 1 / -1;
   grid-row: 4 / span 2;
   text-align: center;
+
   /* grid-template-rows: repeat(auto-fit, minmax(min(25rem, 100%), 1fr)); */
   padding: 3rem 0 0;
 }
@@ -193,7 +198,6 @@ section {
   margin: 0 24px;
   padding: 0;
 }
-
 
 section ul {
 
@@ -260,8 +264,8 @@ footer ul li {
   .flex ul {
     display: grid;
     grid-template-areas:
-    "first first"
-    "second second";
+      "first first"
+      "second second";
   }
 
   .flex li {
