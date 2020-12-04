@@ -6,9 +6,6 @@
 
 html {
   box-sizing: border-box;
-  font-family: Lora, 'Times New Roman', serif;
-  font-size: .8em;
-  line-height: 1.25;
   background-color: #FAF7F4;
 }
 
@@ -38,7 +35,7 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   justify-content: center;
-  row-gap: 5em;
+  row-gap: 3.5em;
 }
 
 header {
@@ -53,8 +50,6 @@ header {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 720px;
   width: 100%;
-  font-family: Montserrat, Helvetica, Arial, sans-serif;
-  font-size: 1.23rem;
   overflow: hidden;
 }
 
@@ -107,40 +102,45 @@ ul li {
   background:rgba(255, 255 , 255, 0.5);
 }
 
-h1 {
-  font-family: 'Playfair Display', serif;
+.banner h3 {
+  transition: all .2s linear;
+}
+
+.banner:hover h3,
+.banner:focus h3 {
+  bottom: 0;
+  font-size: 1.5rem;
+}
+
+.hero-banner {
+  filter: grayscale(100%);
+  transition: all .2s linear;
+  width: 100%;
   margin: 0;
-  padding: 0 0 1rem;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 2rem;
-  line-height: 1.1;
+}
+
+.hero-banner:hover,
+.hero-banner:focus {
+  filter: grayscale(0);
+  /* transform: scaleY(1.5); */
 }
 
 h2 {
-  margin: 0;
-  padding: 0;
-  font-weight: 400;
-  font-size: .75em;
-  text-transform: uppercase;
+  padding: 0 0 1rem;
 }
 
-h3 {
+h4 {
   grid-area: welcome;
   grid-column: 1 / -1;
   grid-row: 1;
-  margin: 0;
   padding: 0 0 2rem;
-  font-weight: 400;
-  font-size: 1.25rem;
-  font-family: Montserrat, Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
 }
 
-.left {
-  text-align: left;
-  font-size: 175%;
-  font-weight: bold;
+.im {
+  font-size: .55em;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: lowercase;
 }
 
 main {
@@ -150,46 +150,26 @@ main {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-areas:
-  "Welcome"
-  "Introduction"
-  "Introduction"
-  "Highlights Highlights"
-  "Highlights Highlights";
   grid-template-columns: 1fr;
   grid-template-rows: auto;
+  padding: 0 24px;
+  /* grid-template-rows: repeat(auto-fit, minmax(20rem, 1fr)); */
 }
 
 p {
-  grid-area: introduction;
   grid-column: 1 / -1;
-  grid-row: 2 / span 2;
+  grid-row: 1 / span -1;
   margin: 0;
   padding: 0;
   align-self: baseline;
 }
 
-
-.drop-cap {
-  position: relative;
-  float: left;
-  font-size: 2.75em;
-  margin: -.025em -.5em -.75em -.6em;
-  padding: 0 .6em;
-  top: -.15em;
-}
-
 .highlight {
-  grid-area: highlights;
   grid-column: 1 / -1;
   grid-row: 4 / span 2;
   text-align: center;
   /* grid-template-rows: repeat(auto-fit, minmax(min(25rem, 100%), 1fr)); */
   padding: 3rem 0 0;
-}
-
-main {
-  padding: 0 24px;
 }
 
 .hidden1, .hidden2, .hidden3 {
@@ -218,10 +198,6 @@ section {
   padding: 0;
 }
 
-section h3 {
-  padding: 0 0 24px;
-  margin: 0;
-}
 
 section ul {
 

@@ -1,0 +1,33 @@
+nav a:focus {
+  outline: .2rem solid #000;
+  outline-offset: .1rem;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #1e7c74;
+}
+
+/* stylelint-disable media-feature-name-no-unknown */
+
+@media (prefers-reduced-motion) {
+
+  img {
+    animation: none;
+  }
+
+}
+
+@media (prefers-color-scheme: dark) {
+
+  body {
+    background-color: #222;
+  }
+
+  html {
+    color: #FAF7F4;
+  }
+
+}
+
+/* stylelint-enable */
