@@ -31,7 +31,7 @@ nav {
 .nav-check:checked ~ .nav {
   display: inline-flex;
   position: absolute;
-  top: 25px;
+  top: 30px;
   right: 70px;
 }
 
@@ -75,6 +75,25 @@ nav {
 @media only screen and (min-width: 60em) {
 
   .nav-label {
+    width: 32px;
+  }
+
+  .nav {
+    right: 100px;
+    top: 45px;
+    font-size: 1.5rem;
+  }
+
+  .nav-check:checked ~ .nav {
+    right: 100px;
+    top: 22px;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  .nav-label {
     width: 64px;
   }
 
@@ -88,9 +107,5 @@ nav {
     right: 100px;
     top: 30px;
   }
-}
-
-@media only screen and (min-width: 90em) {
-
 
 }

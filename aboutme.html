@@ -17,8 +17,15 @@
 </head>
 <body>
 
-  <header>
-    <nav>
+  <ul class="skip-links">
+    <li><a href="#main" tabindex="0">Jump to middle of page content</a></li>
+    <li><a href="#nav" tabindex="0">Jump to navigation content</a></li>
+    <li><a href="#social" tabindex="0">Jump to social media</a></li>
+    <li><a href="#footer" tabindex="0">Jump to footer</a></li>
+  </ul>
+
+  <header role="banner" id="top">
+    <nav role="navigation" id="nav" tabindex="0">
       <input type="checkbox" class="nav-check" id="nav-check">
       <label class="nav-label" for="nav-check">
         <img class="nav-open" src="images/nav-icon.svg" alt="Open Navigation">
@@ -30,7 +37,7 @@
         <li><a href="gallery.html" aria-label="Go to Gallery">Gallery</a></li>
       </ul>
     </nav>
-    <img class="hero-banner" src="https://via.placeholder.com/1920x1080.png?text=Hero+Banner+Background+With+Logo" alt="">
+    <img class="hero-banner" src="https://via.placeholder.com/1920x1080.png?text=Hero+Banner+Background+With+Logo" alt="" aria-details="#banner">
     <div class="banner">
       <h1><span class="im">this is</span> About Me</h1>
       <h2>Lets get personal</h2>
@@ -38,7 +45,7 @@
     </div>
   </header>
 
-  <main role="main">
+  <main role="main" id="main">
 
     <h3 role="welcome">Hello</h3>
     <p role="introduction">Thank you for visiting me! My name is Sarah Charity and I love to create in many ways! </br>
@@ -129,17 +136,11 @@
 
   </main>
 
-        <footer role="footer">
-          <ul class="footer-nav">
-            <li><a href="index.html">Icon</a></li>
-            <li><a href="aboutme.html">Legal</a></li>
-            <li><img class="social" src="https://via.placeholder.com/50x50.png?text=Social+Media+Icon" alt=""></li>
-            <li><img class="social" src="https://via.placeholder.com/50x50.png?text=Social+Media+Icon" alt=""></li>
-            <li><img class="social" src="https://via.placeholder.com/50x50.png?text=Social+Media+Icon" alt=""></li>
-            <li><a href="gallery.html">Back to Top</a></li>
-          </ul>
-        </footer>
-
-
-      </body>
+  <footer class="aboutmefooter" role="contentinfo" id="footer">
+    <ul class="footer-nav">
+      <li><a href="index.html">Icon</a></li>
+      <li><a href="aboutme.html">Legal</a></li>
+      <li><a href="#top">Back to Top</a></li>
+    </ul>
+  </footer>
       </html>

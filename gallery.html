@@ -17,8 +17,15 @@
 </head>
 <body>
 
-  <header>
-    <nav>
+  <ul class="skip-links">
+    <li><a href="#main" tabindex="0">Jump to middle of page content</a></li>
+    <li><a href="#nav" tabindex="0">Jump to navigation content</a></li>
+    <li><a href="#social" tabindex="0">Jump to social media</a></li>
+    <li><a href="#footer" tabindex="0">Jump to footer</a></li>
+  </ul>
+
+  <header role="banner" id="top">
+    <nav role="navigation" id="nav" tabindex="0">
       <input type="checkbox" class="nav-check" id="nav-check">
       <label class="nav-label" for="nav-check">
         <img class="nav-open" src="images/nav-icon.svg" alt="Open Navigation">
@@ -30,7 +37,7 @@
         <li><a href="gallery.html" aria-label="Go to Gallery">Gallery</a></li>
       </ul>
     </nav>
-    <img class="hero-banner" src="https://via.placeholder.com/1920x1080.png?text=Hero+Banner+Background+With+Logo" alt="">
+    <img class="hero-banner" src="https://via.placeholder.com/1920x1080.png?text=Hero+Banner+Background+With+Logo" alt="" aria-details="#banner">
     <div class="banner">
       <h1><span class="im">my</span> Gallery</h1>
       <h2>Professional Work</h2>
@@ -38,8 +45,7 @@
     </div>
   </header>
 
-  <main role="main">
-
+  <main role="main" id="main">
     <h3 role="welcome">Welcome</h3>
 
     <ul class="flex highlight">
@@ -49,14 +55,12 @@
 
   </main>
 
-        <footer role="footer">
-          <ul class="footer-nav">
-            <li><a href="index.html">Icon</a></li>
-            <li><a href="aboutme.html">Legal</a></li>
-            <li><a href="gallery.html">Back to Top</a></li>
-          </ul>
-        </footer>
 
-
-      </body>
-      </html>
+  <footer class="aboutmefooter" role="contentinfo" id="footer">
+    <ul class="footer-nav">
+      <li><a href="index.html">Icon</a></li>
+      <li><a href="aboutme.html">Legal</a></li>
+      <li><a href="#top">Back to Top</a></li>
+    </ul>
+  </footer>
+</html>
