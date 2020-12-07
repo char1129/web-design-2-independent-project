@@ -181,14 +181,14 @@ p {
 }
 
 .flex-2 {
-  display: flex;
-  justify-content: space-around;
+  text-align: center;
+  padding: 3rem 0 0;
 }
 
-.flex-2 li {
-  width: 33.33%;
+/* .flex-2 li {
+  width: 100%;
   text-align: -webkit-center;
-}
+} */
 
 /* ------------------------------------------Social Media Section------------------------------------------ */
 
@@ -206,9 +206,8 @@ section {
 }
 
 section ul {
-
-  flex-direction: row;
-  flex-wrap: nowrap;
+  /* flex-direction: row;
+  flex-wrap: nowrap; */
   padding: 0;
   margin: 0;
 }
@@ -249,13 +248,13 @@ legend {
   text-transform: uppercase;
 }
 
-.form-space {
+/* .form-space {
   margin: 0;
   padding: 0 0 10px;
-}
+} */
 
 .note {
-  width: 18em;
+  width: 100%;
 }
 
 /* ------------------------------------------Footer Section------------------------------------------ */
@@ -484,12 +483,30 @@ a:focus, [tabindex="0"]:focus {
     }
 
     fieldset {
-      display: flex;
+      /* display: flex;
       justify-content: center;
-      align-items: center;
-      height: 200px;
+      height: 200px; */
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-column-gap: 1.5rem;
     }
 
+    .form-space1 {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    .form-space2 {
+      grid-column: 2;
+      grid-row: 1;
+    }
+
+  .email-button {
+    grid-column: 2;
+    grid-row: 2;
+    text-align: right;
+  }
 }
 
 @media only screen and (min-width: 90em) {
