@@ -5,6 +5,10 @@ nav {
   z-index: 100;
 }
 
+nav ul li {
+  float: left;
+}
+
 .nav {
   list-style-type: none;
   display: none;

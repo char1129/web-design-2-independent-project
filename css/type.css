@@ -1,7 +1,7 @@
 html {
   font-family: Lora, 'Times New Roman', serif;
   font-size: .875em;
-  line-height: 1;
+  line-height: 1.1;
 }
 
 h1, h2 {
@@ -43,15 +43,28 @@ h4 {
   text-transform: uppercase;
 }
 
+p {
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+}
+
 .drop-cap {
   position: relative;
   float: left;
   font-size: 2.75em;
-  margin: -.025em -.5em -.25em -.6em;
+  margin: -.025em -.5em -.3em -.6em;
   padding: 0 .6em;
   top: -.15em;
 }
 
 .indent {
   text-indent: 14px;
+}
+
+.social-small, .hidetext {
+  font-family: Montserrat, Arial, san-serif;
+  text-transform: uppercase;
 }

@@ -1,4 +1,36 @@
-.skip-links a {
+.skip-links {
+  grid-area: 1;
+  grid-column: 1;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.skip-links > li::before {
+  content: none;
+}
+
+.skip-links a,
+.skip-links button {
+  padding: .5em .75em;
+  position: absolute;
+  top: -10em;
+  z-index: 10000;
+  background-color: #000;
+  border: 0;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.skip-links a:focus,
+.skip-links button:focus {
+  outline-offset: 3px;
+  top: 0;
+}
+
+/* .skip-links a {
   grid-area: none;
   position: absolute;
   top: -10px;
@@ -12,7 +44,7 @@
   top:0;
   outline-color: #fff;
   display: inline-block;
-}
+} */
 
 nav a:focus {
   outline: .2rem solid #000;
@@ -26,10 +58,14 @@ nav a:focus {
 
 /* stylelint-disable media-feature-name-no-unknown */
 
-@media (prefers-reduced-motion) {
+@media (prefers-reduced-motion: reduced) {
 
   img {
     animation: none;
+  }
+
+  .hero-banner {
+    transition: none;
   }
 
 }
@@ -42,6 +78,14 @@ nav a:focus {
 
   html {
     color: #FAF7F4;
+  }
+
+}
+
+@media (prefers-contrast: more) {
+
+  h1, h2, h3, h4, a, p  {
+    font-weight: bold;
   }
 
 }

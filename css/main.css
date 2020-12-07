@@ -15,6 +15,8 @@ html {
   box-sizing: inherit;
 }
 
+/* ------------------------------------------Grid/Document Wide Section------------------------------------------ */
+
 img {
   display: block;
   width: 100%;
@@ -52,6 +54,19 @@ header {
   overflow: hidden;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+/* ------------------------------------------Banner Section------------------------------------------ */
+
 .hero-banner {
   position: relative;
   grid-column: 1 / -1;
@@ -72,24 +87,6 @@ header {
   filter: grayscale(100%);
   transition: all .2s linear;
 
-  /* width: 100%; */
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  float: left;
-}
-
-ul li {
-  margin: 0;
-  padding: 0;
-  display: inline-block;
-
-  /* align-self: center; */
 }
 
 .banner {
@@ -127,6 +124,8 @@ h2 {
   padding: 0 0 1rem;
 }
 
+/* ------------------------------------------Main Section------------------------------------------ */
+
 h4 {
   grid-area: welcome;
   grid-column: 1 / -1;
@@ -141,6 +140,8 @@ h4 {
   text-transform: lowercase;
 }
 
+
+
 main {
   grid-area: main;
   grid-column: 1 / -1;
@@ -150,8 +151,6 @@ main {
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   padding: 0 1.5rem;
-
-  /* grid-template-rows: repeat(auto-fit, minmax(20rem, 1fr)); */
 }
 
 p {
@@ -161,6 +160,8 @@ p {
   padding: 0;
   align-self: baseline;
 }
+
+/* ------------------------------------------Featured Work Section------------------------------------------ */
 
 .featuredwork {
   display: block;
@@ -172,8 +173,6 @@ p {
   grid-column: 1 / -1;
   grid-row: 4 / span 2;
   text-align: center;
-
-  /* grid-template-rows: repeat(auto-fit, minmax(min(25rem, 100%), 1fr)); */
   padding: 3rem 0 0;
 }
 
@@ -188,8 +187,10 @@ p {
 
 .flex-2 li {
   width: 33.33%;
-  text-align: center;
+  text-align: -webkit-center;
 }
+
+/* ------------------------------------------Social Media Section------------------------------------------ */
 
 .social {
   max-width: 150px;
@@ -200,8 +201,8 @@ section {
   grid-area: social;
   grid-column: 1;
   grid-row: 3;
-  margin: 0 24px;
-  padding: 0;
+  padding: 0 1.5rem;
+  margin: 0;
 }
 
 section ul {
@@ -211,6 +212,23 @@ section ul {
   padding: 0;
   margin: 0;
 }
+
+.social-small, .hidetext {
+  display: none;
+  padding: 0 1.5rem;
+}
+
+.hidetext {
+  grid-area: social;
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.label {
+  text-align: center;
+}
+
+/* ------------------------------------------Contact Form Section------------------------------------------ */
 
 aside {
   grid-area: email;
@@ -240,6 +258,8 @@ legend {
   width: 18em;
 }
 
+/* ------------------------------------------Footer Section------------------------------------------ */
+
 footer {
   grid-area: footer;
   grid-column: 1 / -1;
@@ -249,7 +269,110 @@ footer {
 footer ul li {
   display: inline-block;
   padding: 0;
+  justify-content: space-between;
+  text-align: center;
 }
+
+/* ------------------------------------------Button Section------------------------------------------ */
+
+button,
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0;
+  overflow: visible;
+  padding: .375em .75em .42em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #333;
+  border-radius: 4px;
+  border: 3px solid #333;
+  color: #fff;
+  font: inherit;
+  text-decoration: none;
+  text-transform: none;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* stylelint-enable */
+
+button:focus,
+button:hover,
+.btn:focus,
+.btn:hover {
+  background-color: rgba(102, 153, 127, 0.4); #e2e2e2;;
+  border-color: #000;
+  color: #fff;
+  transition: opacity .3s ease-in;
+  transition-delay: 1s;
+}
+
+button[disabled] {
+  cursor: default;
+}
+
+.btn-ghost {
+  font-family: Montserrat, Arial, sans-serif;
+  text-transform: uppercase;
+  background-color: transparent;
+  font-size: .75rem;
+  border-color: rgb(25, 76, 51);
+  color: #000;
+}
+
+.btn-ghost:focus,
+.btn-ghost:hover,{
+  background-color: rgba(102, 153, 127, 0.4); #e2e2e2;
+  border-color: #000;
+  color: #000;
+}
+
+.btn-link {
+  display: inline;
+  padding: 0;
+  background-color: transparent;
+  border-radius: 0;
+  border: 0;
+  color: inherit;
+}
+
+.btn-link:focus,
+.btn-link:hover {
+  background-color: transparent;
+  color: inherit;
+}
+
+a:hover, a:active {
+  outline: none;
+}
+
+a:focus,
+[tabindex="0"]:focus,
+details:focus,
+summary:focus,
+input:focus,
+textarea:focus,
+button:focus,
+select:focus {
+  outline: 3px solid #000;
+  outline-offset: 0;
+}
+
+a:focus, [tabindex="0"]:focus {
+  outline-offset: 3px;
+}
+
+/* ------------------------------------------Animation/Transition Section------------------------------------------ */
+
+
+
+
+/* ------------------------------------------Media Queries Section------------------------------------------ */
 
 @media only screen and (min-width: 25em) {
 
@@ -311,10 +434,10 @@ footer ul li {
     width: 25%;
   }
 
-  .social {
+  /* .social {
     display: block;
     width: 100%;
-  }
+  } */
 
 }
 
@@ -328,13 +451,44 @@ footer ul li {
     font-size: 2rem;
   }
 
+  main {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .stay {
+    grid-column: 1;
+  }
+
+  .move2column {
+    grid-column: 2;
+  }
+
   .hero-banner {
     width: 100%;
   }
 
-  .hidelabel {
-    display: none;
+  .hidetext {
+    display: block;
   }
+
+    .social-box {
+      display: none;
+    }
+
+    .social-small {
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+      max-width: 50px;
+    }
+
+    fieldset {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+    }
 
 }
 
