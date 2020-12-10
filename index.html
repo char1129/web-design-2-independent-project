@@ -51,11 +51,10 @@
     <p class="move2column"><span class="drop-cap">M</span>y name is Sarah Charity and I am a second year Graphic Designer, going into my second semester at Algonquin College.
     <span class="indent">My formal education includes logo/web/ux and ui design, print and web layouts (all of which are optimized for accessibility) and have aptitudes for concept sketching, creative brainstorming, design process and team management. By the end of this year I will also have knowledge of effective branding and marketing techniques, along with more extensive education in previously acquired skills.</span></p>
 
-    <ul class="highlight">
-      <li class="featuredwork">
-        <h4>Featured Work</h4>
-      </li>
-      <li><a href="/images/placeholder.jpeg" target="_blank" rel="noopener noreferrer"><img src="https://via.placeholder.com/150x150.png?text=Featured+Img" alt="artwork of" aria-details="#featured-artwork"></a>
+        <h4 class="featuredwork">Featured Work</h4>
+
+        <ul class="movefeatureimgs">
+          <li><a href="/images/placeholder.jpeg" target="_blank" rel="noopener noreferrer"><img src="https://via.placeholder.com/150x150.png?text=Featured+Img" alt="artwork of" aria-details="#featured-artwork"></a>
         <p class="caption">Image 1</p>
       </li>
       <li class="hidden1"><a href="/images/placeholder.jpeg" target="_blank" rel="noopener noreferrer"><img src="https://via.placeholder.com/150x150.png?text=Featured+Img" alt="artwork of" aria-details="#featured-artwork"></a>
@@ -69,13 +68,11 @@
       </li>
     </ul>
 
-  </main>
-
 <div class="hidetext">
   <p> Check out my social media! Icon links below!</p>
 </div>
-  <section class="social-box" role="complementary" id="social">
-    <h4>Social Media</h4>
+  <!-- <section class="social-box" role="complementary" id="social"> -->
+    <h4 class="socialheader">Social Media</h4>
     <ul class="flex-2">
       <li><a href="http://www.instagram.com"><img class="social" src="https://via.placeholder.com/50x50.png?text=Social+Media+Icon" alt="instagram" aria-details="#instagram-icon"></a>
         <p class="label">Instagram</p>
@@ -89,27 +86,28 @@
     </ul>
   </section>
 
-  <aside class="email">
-    <form method="POST" action="https://formspree.io/f/xdopdjpz">
-      <fieldset>
-        <legend>Send me an email!</legend>
-        <div class="form-space1">
-          <label for="email">Email</label>
-          <input class="note" id="email" type="email" required>
-        </div>
-        <div class="form-space2">
-          <label for="note">What would you like to say?</label>
-          <textarea class="note" id="note" name="message" required></textarea>
-          <input type="hidden" name="secret" value="What would you like to say?">
-        </div>
-        <div class="email-button">
-          <button class="btn btn-light center" type="submit">Send</button>
-        </div>
-      </fieldset>
-    </form>
-  </aside>
+  </main>
 
   <footer class="aboutmefooter" role="contentinfo" id="footer">
+    <aside class="email">
+      <form method="POST" action="https://formspree.io/f/xdopdjpz">
+        <fieldset>
+          <legend>Send me an email!</legend>
+          <div class="form-space1">
+            <label for="email">Email</label>
+            <input class="note" id="email" type="email" required>
+          </div>
+          <div class="form-space2">
+            <label for="note">What would you like to say?</label>
+            <textarea class="note" id="note" name="message" required></textarea>
+            <input type="hidden" name="secret" value="What would you like to say?">
+          </div>
+          <div class="email-button">
+            <button class="btn btn-light center" type="submit">Send</button>
+          </div>
+        </fieldset>
+      </form>
+    </aside>
     <ul class="footer-nav">
       <li><a href="index.html">Icon</a></li>
       <li><a class="btn btn-ghost" href="aboutme.html">Legal</a></li>

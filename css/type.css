@@ -38,7 +38,7 @@ h3 {
 
 h4 {
   margin: 0;
-  padding: 0 0 1.5rem;
+  /* padding: 0 0 1.5rem; */
   font-size: 1.25rem;
   text-transform: uppercase;
 }
@@ -49,6 +49,8 @@ p {
   -moz-hyphens: auto;
   -o-hyphens: auto;
   hyphens: auto;
+  margin: 0;
+  padding: 0;
 }
 
 .drop-cap {
