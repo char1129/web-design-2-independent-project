@@ -455,12 +455,15 @@ a:focus, [tabindex="0"]:focus {
     grid-template-rows: 1fr;
   }
 
-  .stay {
-    grid-column: 1;
+  .moveSH1 {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    vertical-align: top;
   }
 
   .move2column {
-    grid-column: 2;
+    grid-column: 2 / -1;
+    grid-row: 1;
   }
 
   .hero-banner {
@@ -540,6 +543,19 @@ a:focus, [tabindex="0"]:focus {
 
   h2 {
     font-size: 3rem;
+  }
+
+  main {
+    grid-template-columns: 1fr 1fr 1fr 1fr
+  }
+
+  .moveSH1 {
+    grid-column: 2 / span 2;
+  }
+
+  .move2column {
+    grid-row: 2;
+    grid-column: 2 / span 2;
   }
 
 }
