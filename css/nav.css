@@ -48,6 +48,7 @@ nav {
   cursor: pointer;
   position: absolute;
   width: 24px;
+  height: 24px;
   display: inline-block;
   top: 25px;
   right: 25px;
@@ -70,6 +71,7 @@ nav {
 
 .nav-check:checked ~ .nav-label .nav-close {
   display: block;
+  box-shadow: inset 10px 10px 12px -10px rgba(0,0,0,0.5);
 }
 
 
