@@ -23,11 +23,12 @@
     <li><a href="#nav" tabindex="0">Jump to navigation content</a></li>
     <li><a href="#social" tabindex="0">Jump to social media</a></li>
     <li><a href="#footer" tabindex="0">Jump to footer</a></li>
+    <li><a href="#email" tabindex="0">Jump to email</a></li>
   </ul>
 
-  <header role="banner" id="top">
+  <header role="banner" id="top" tabindex="0">
     <nav role="navigation" id="nav" tabindex="0">
-      <input type="checkbox" class="nav-check" id="nav-check">
+      <input type="checkbox" class="nav-check" id="nav-check" tabindex="0">
       <label class="nav-label" for="nav-check">
         <img class="nav-open" src="images/nav-icon.svg" alt="Open Navigation">
         <img class="nav-close" src="images/nav-close.svg" alt="Close Navigation">
@@ -46,7 +47,7 @@
     </div>
   </header>
 
-  <main role="main" id="main">
+  <main role="main" id="main" tabindex="0">
     <h4 class="movesh1">Welcome</h4>
     <p class="move2column"><span class="drop-cap">M</span>y name is Sarah Charity and I am a second year Graphic Designer, going into my second semester at Algonquin College.<span class="indent">My formal education includes logo/web/ux and ui design, print and web layouts (all of which are optimized for accessibility) and have aptitudes for concept sketching, creative brainstorming, design process and team management. By the end of this year I will also have knowledge of effective branding and marketing techniques, along with more extensive education in previously acquired skills.</span></p>
 
@@ -93,18 +94,18 @@
 
   </main>
 
-  <footer class="aboutmefooter" role="contentinfo" id="footer">
+  <footer class="aboutmefooter" role="contentinfo" id="footer" tabindex="0">
     <aside class="email">
       <form method="POST" action="https://formspree.io/f/xdopdjpz">
         <fieldset>
           <legend>Send me an email!</legend>
           <div class="form-space1">
             <label for="email">Email</label>
-            <input class="note" id="email" type="email" required>
+            <input class="note" id="email" type="email" required tabindex="0">
           </div>
           <div class="form-space2">
             <label for="note">What would you like to say?</label>
-            <textarea class="note" id="note" name="message" required></textarea>
+            <textarea class="note" id="note" name="message" required tabindex="0"></textarea>
             <input type="hidden" name="secret" value="What would you like to say?">
           </div>
           <div class="email-button">

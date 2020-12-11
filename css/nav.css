@@ -27,6 +27,11 @@ nav {
   color: #fff;
 }
 
+.nav a:focus {
+  background-color: #333;
+  color: #fff;
+}
+
 .nav-check {
   position: absolute;
   top: -3em;
