@@ -57,6 +57,7 @@ nav {
 .nav-close {
   display: block;
   width: 100%;
+  background-color: rgba(255, 0, 0, 0.0);
 }
 
 .nav-close {
