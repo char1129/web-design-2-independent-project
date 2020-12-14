@@ -41,8 +41,6 @@ body {
   grid-template-areas:
     "header"
     "main"
-    /* "social"
-    "email" */
     "footer";
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
@@ -174,16 +172,6 @@ h4 {
   grid-row: 1 / span 3;
 }
 
-.gallery-button {
-  background-color: #eee;
-  display: inline-block;
-  padding: 15px 23px 20px 20px;
-  border-width: medium;
-  font-family: Montserrat, Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  text-transform: uppercase;
-}
-
 label {
   padding-bottom: 2rem;
 }
@@ -293,17 +281,22 @@ p {
 
 /* ------------------------------------------Social Media Section------------------------------------------ */
 
-.social {
+/* .social {
   max-width: 150px;
   padding: 0 .25em;
-}
+} */
 
-section {
+.social-section {
   grid-area: social;
   grid-column: 1;
   grid-row: 5;
-  padding: 0 1.5rem;
+  padding: 0;
   margin: 0;
+}
+
+.wantmore {
+  grid-row: 6;
+  grid-column: 1;
 }
 
 section ul {
@@ -321,7 +314,7 @@ section ul {
 .hidetext {
   grid-area: social;
   grid-column: 1 / span 2;
-  grid-row: 6;
+  grid-row: 4;
   padding: 0;
   margin: 0;
 }
@@ -334,18 +327,18 @@ section ul {
 
 aside {
   grid-area: email;
-  grid-column: 1 / -1;
   grid-row: 7;
+  grid-column: 1;
 }
 
 fieldset {
   padding: 0;
-  margin: 0 1.5rem;
+  margin: 0;
   border: none;
 }
 
 legend {
-  padding: 0 0 10px;
+  padding: 0 0 1rem;
   font-size: 1em;
   font-family: Montserrat, Helvetica, Arial, sans-serif;
   text-transform: uppercase;
@@ -366,6 +359,9 @@ footer {
   grid-area: footer;
   grid-column: 1 / -1;
   grid-row: 3;
+  display: grid;
+  grid-template-areas: 1fr 1fr;
+  align-items: end;
 }
 
 footer ul li {
@@ -376,7 +372,21 @@ footer ul li {
   text-align: center;
 }
 
+.footer-nav {
+  grid-column: 2;
+  grid-row: 1;
+}
 /* ------------------------------------------Button Section------------------------------------------ */
+
+.gallery-button {
+  background-color: #eee;
+  display: inline-block;
+  padding: 15px 23px 20px 20px;
+  border-width: medium;
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+}
 
 button,
 .btn {
@@ -468,10 +478,6 @@ a:focus, [tabindex="0"]:focus {
   outline-offset: 3px;
 }
 
-article, section {
-  display: none;
-}
-
 /* ------------------------------------------Animation/Transition Section------------------------------------------ */
 
 /* ------------------------------------------Media Queries Section------------------------------------------ */
@@ -516,6 +522,17 @@ article, section {
     text-align: right;
   }
 
+.social-section {
+  grid-row: 3;
+}
+
+.wantmore {
+  grid-row: 5;
+}
+
+.email {
+  grid-row: 6;
+}
 }
 
 @media only screen and (min-width: 38em) {
@@ -538,11 +555,6 @@ article, section {
     display: inline-block;
     width: 25%;
   }
-
-  /* .social {
-  display: block;
-  width: 100%;
-  } */
 
   main ul li {
     width: 30%;
@@ -624,15 +636,15 @@ article, section {
     max-width: 50px;
   }
 
-  fieldset {
-    /* display: flex;
+/*   fieldset {
+    display: flex;
     justify-content: center;
-    height: 200px; */
+    height: 200px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-column-gap: 1.5rem;
-  }
+  }*/
 
   .form-space1 {
     grid-column: 1;

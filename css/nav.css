@@ -71,7 +71,11 @@ nav {
 
 .nav-check:checked ~ .nav-label .nav-close {
   display: block;
-  box-shadow: inset 10px 10px 12px -10px rgba(0,0,0,0.5);
+  box-shadow: inset -3px -3px 4px 0px rgba(0,0,0,0.5);
+}
+
+.nav ul li a {
+
 }
 
 
