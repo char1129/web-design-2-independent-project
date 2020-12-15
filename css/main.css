@@ -604,8 +604,8 @@ a:focus, [tabindex="0"]:focus {
   }
 
   .move2column {
-    grid-column: 2 / -1;
-    grid-row: 1;
+    grid-column: 2;
+    grid-row: 1/ span 2;
   }
 
   .tablemove {
@@ -632,7 +632,7 @@ a:focus, [tabindex="0"]:focus {
 
   .hidetext {
     display: block;
-
+    grid-row: 5;
     /* grid-row: 1 / span 2;
     grid-row: 6; */
   }
@@ -654,18 +654,6 @@ a:focus, [tabindex="0"]:focus {
     max-width: 50px;
   }
 
-  /*
-  fieldset {
-    display: flex;
-    justify-content: center;
-    height: 200px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-column-gap: 1.5rem;
-  }
-  */
-
   .form-space1 {
     grid-column: 1;
     grid-row: 1;
@@ -681,10 +669,6 @@ a:focus, [tabindex="0"]:focus {
     grid-row: 2;
     text-align: right;
   }
-
-  /* main ul li {
-    width: 32%;
-  } */
 
   .galleryh4-1 {
     grid-row: 2;
@@ -715,26 +699,6 @@ a:focus, [tabindex="0"]:focus {
     display: inline-block;
   }
 
-  /* .galleryh4-3 {
-    grid-row: 7;
-    grid-column: 1;
-    display: block;
-  }
-
-  .galleryh4-4 {
-    grid-row: 8;
-    display: block;
-  }
-
-  .galleryh4-5 {
-    grid-row: 10;
-    display: block;
-  } */
-
-  /* .seemoregrid {
-    grid-template-columns: 1fr 1fr;
-  } */
-
   .gallery-seemore ul:first-child {
     vertical-align: middle;
   }
@@ -744,11 +708,11 @@ a:focus, [tabindex="0"]:focus {
   }
 
   .wantmore {
-    grid-row: 5;
+    grid-row: 6;
   }
 
   .email {
-    grid-row: 6;
+    grid-row: 7;
   }
 
 }
