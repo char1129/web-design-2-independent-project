@@ -79,13 +79,13 @@ nav {
 }
 
 
-.accNav {
+.accnav {
   position: absolute;
   top: 30px;
   right: 70px;
 }
 
-.accNav ul li a:hover {
+.accnav ul li a:hover {
   border-style: inset;
   border-color: #EEE;
 }
