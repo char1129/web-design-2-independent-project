@@ -68,7 +68,7 @@ header {
   grid-area: header;
   grid-column: 1 / -1;
   grid-row: 1;
-  margin: 0;
+  margin: 0 0 3rem;
   padding: 0;
   display: grid;
   grid-template-areas: "hero-banner hero-banner hero-banner";
@@ -234,7 +234,7 @@ grid-row: 5;
   display: block;
 }
 
-.hide1, .hide2 {
+.hide1, .hide2, .hide3 {
   display: none;
 }
 
@@ -306,6 +306,7 @@ p {
   grid-row: 5;
   padding: 0;
   margin: 0;
+  text-align: center;
 }
 
 .wantmore {
@@ -447,7 +448,7 @@ button[disabled] {
   text-transform: uppercase;
   background-color: transparent;
   font-size: .75rem;
-  border-color: rgb(25, 76, 51);
+  border-color: rgba(102, 153, 127, .4);
   color: #000;
 }
 
@@ -503,13 +504,16 @@ a:focus, [tabindex="0"]:focus {
   grid-row: 4;
 }
 
-.adobe {
+.resume {
   grid-row: 5;
   grid-column: 1;
 }
 
 /* ------------------------------------------About Me------------------------------------------ */
 
+.hidetable {
+  display: none;
+}
 /* ------------------------------------------Media Queries Section------------------------------------------ */
 
 @media only screen and (min-width: 25em) {
@@ -609,17 +613,43 @@ a:focus, [tabindex="0"]:focus {
   }
 
   .move2column {
-    grid-column: 2;
+    grid-column: 2 / span 2;
     grid-row: 1/ span 2;
+
+    column-count: 3;
+    column-gap: 40px;
+    column-width: 300px;
+  }
+
+  .hidetable {
+    display: block;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .resume1 {
+    grid-row: 7;
   }
 
   .tablemove {
     grid-column: 1/-1;
-    grid-row: 7;
-    justify-self: center;
+    grid-row: 6;
     max-width: 1400px;
   }
 
+  caption, tr, td, th {
+    text-align: left;
+  }
+
+  .nobold {
+    font-weight: normal;
+  }
+
+  .span {
+    colspan: 0;
+  }
   .featuredwork {
     grid-column: 1 / -1;
     grid-row: 3;
@@ -627,9 +657,13 @@ a:focus, [tabindex="0"]:focus {
   }
 
   .movefeatureimgs {
-    grid-column: 2 / -1;
+    grid-column: 2 / span 2;
     grid-row: 3;
   }
+
+  /* main ul li {
+    width: 45%;
+  } */
 
   .hero-banner {
     width: 100%;
@@ -696,9 +730,6 @@ a:focus, [tabindex="0"]:focus {
     text-align: left;
   }
 
-  main ul li {
-    width: 20%;
-  }
 
   .hide2 {
     display: inline-block;
@@ -713,11 +744,12 @@ a:focus, [tabindex="0"]:focus {
   }
 
   .wantmore {
-    grid-row: 6;
+    grid-row: 4;
   }
 
   .email {
-    grid-row: 7;
+    grid-row: 5;
+    grid-column: 3;
   }
 
 }
@@ -735,6 +767,11 @@ a:focus, [tabindex="0"]:focus {
   font-size: 2rem;
   }
   */
+
+  main ul li {
+    max-width: 400px;
+    max-height: 400px;
+  }
 
   .logotop {
     width: 64px;
@@ -784,7 +821,11 @@ a:focus, [tabindex="0"]:focus {
 
   .movefeatureimgs {
     grid-column: 2 / span 2;
-    grid-row: 4;
+    grid-row: 3;
+  }
+
+  .email {
+    grid-column: 2;
   }
 
   main ul li {

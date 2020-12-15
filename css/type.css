@@ -43,6 +43,22 @@ h4 {
   text-transform: uppercase;
 }
 
+.social-small, .hidetext {
+  font-family: Montserrat, Arial, san-serif;
+  text-transform: uppercase;
+}
+
+/* ------------------------------------------Paragraph Section------------------------------------------ */
+/* .paraspace {
+  float: left;
+  width: 400px;
+  padding: 0 20px;
+}
+
+.vertical-rule {
+  border-right: 1px solid #EEE;
+} */
+
 p {
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
@@ -64,9 +80,4 @@ p {
 
 .indent {
   text-indent: 14px;
-}
-
-.social-small, .hidetext {
-  font-family: Montserrat, Arial, san-serif;
-  text-transform: uppercase;
 }
