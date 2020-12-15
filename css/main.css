@@ -240,7 +240,7 @@ main {
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   padding: 0 1.5rem;
-  grid-row-gap: 1.5rem;
+  grid-row-gap: 3rem;
 }
 
 p {
@@ -478,7 +478,23 @@ a:focus, [tabindex="0"]:focus {
   outline-offset: 3px;
 }
 
-/* ------------------------------------------Animation/Transition Section------------------------------------------ */
+/* ------------------------------------------Animation/Transition/SVG Section------------------------------------------ */
+
+.gloat {
+  grid-row: 3
+}
+
+.gloatpara {
+  grid-row: 4;
+}
+
+.adobe {
+  grid-row: 5;
+  grid-column: 1;
+}
+
+/* ------------------------------------------About Me------------------------------------------ */
+
 
 /* ------------------------------------------Media Queries Section------------------------------------------ */
 
@@ -522,17 +538,6 @@ a:focus, [tabindex="0"]:focus {
     text-align: right;
   }
 
-.social-section {
-  grid-row: 3;
-}
-
-.wantmore {
-  grid-row: 5;
-}
-
-.email {
-  grid-row: 6;
-}
 }
 
 @media only screen and (min-width: 38em) {
@@ -594,7 +599,7 @@ a:focus, [tabindex="0"]:focus {
 
   .tablemove {
     grid-column: 1/-1;
-    grid-row: 3;
+    grid-row: 7;
   }
 
   .featuredwork {
@@ -722,6 +727,18 @@ a:focus, [tabindex="0"]:focus {
     justify-self: center;
     max-width: 1400px
 
+  }
+
+  .social-section {
+    grid-row: 3;
+  }
+
+  .wantmore {
+    grid-row: 5;
+  }
+
+  .email {
+    grid-row: 6;
   }
 
 }
