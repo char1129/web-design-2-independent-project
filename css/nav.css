@@ -130,9 +130,9 @@ nav {
 
 @media only screen and (min-width: 90em) {
 
-  /* .nav-label {
-    width: 64px;
-  } */
+  .nav-label {
+    width: 45px;
+  }
 
   .nav {
     right: 100px;

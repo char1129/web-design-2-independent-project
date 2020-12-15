@@ -7,6 +7,11 @@
 html {
   box-sizing: border-box;
   background-color: #faf7f4;
+
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 *,
@@ -617,13 +622,13 @@ a:focus, [tabindex="0"]:focus {
 
   .featuredwork {
     grid-column: 1 / -1;
-    grid-row: 2;
+    grid-row: 3;
     vertical-align: top;
   }
 
   .movefeatureimgs {
     grid-column: 2 / -1;
-    grid-row: 2;
+    grid-row: 3;
   }
 
   .hero-banner {
@@ -730,6 +735,11 @@ a:focus, [tabindex="0"]:focus {
   font-size: 2rem;
   }
   */
+
+  .logotop {
+    width: 64px;
+    height: 64px;
+  }
 
   .flex {
     width: 100%;
