@@ -496,6 +496,21 @@ a:focus, [tabindex="0"]:focus {
 
 /* ------------------------------------------Animation/Transition/SVG Section------------------------------------------ */
 
+.herobanner img {
+  filter: grayscale(100%);
+  transition: all .2s linear;
+}
+
+.herobanner img:hover {
+  filter: grayscale(0);
+}
+
+/* ------------------------------------------About Me------------------------------------------ */
+
+.hidetable {
+  display: none;
+}
+
 .gloat {
   grid-row: 3;
 }
@@ -507,12 +522,6 @@ a:focus, [tabindex="0"]:focus {
 .resume {
   grid-row: 5;
   grid-column: 1;
-}
-
-/* ------------------------------------------About Me------------------------------------------ */
-
-.hidetable {
-  display: none;
 }
 /* ------------------------------------------Media Queries Section------------------------------------------ */
 
