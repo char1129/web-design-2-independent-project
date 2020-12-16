@@ -187,6 +187,10 @@ label {
   padding-bottom: 2rem;
 }
 
+.move2column {
+  padding-bottom: 3rem;
+}
+
 /*  ------------------------------------ Gallary ------------------------------ */
 
 /* .seemore-check:checked ~ .galleryh4-3 {
@@ -254,7 +258,7 @@ main {
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   padding: 0 1.5rem;
-  grid-row-gap: 3rem;
+  grid-row-gap: 1rem;
 }
 
 p {
@@ -366,6 +370,12 @@ padding: 0 0 10px;
 
 .note {
   width: 100%;
+}
+
+.tablemove {
+  padding-bottom: 3rem;
+  grid-column: ;
+  grid-row:
 }
 
 /* ------------------------------------------Footer Section------------------------------------------ */
@@ -516,6 +526,7 @@ a:focus, [tabindex="0"]:focus {
 
 .gloatpara {
   grid-row: 4;
+  padding-bottom: 3rem;
 }
 
 .resume {
@@ -623,7 +634,6 @@ a:focus, [tabindex="0"]:focus {
   .move2column {
     grid-column: 2 / span 2;
     grid-row: 1/ span 2;
-
     column-count: 3;
     column-gap: 40px;
     column-width: 300px;
@@ -643,8 +653,12 @@ a:focus, [tabindex="0"]:focus {
 
   .tablemove {
     grid-column: 1/-1;
-    grid-row: 6;
+    grid-row: 5;
     max-width: 1400px;
+  }
+
+  .gloat {
+    grid-row: 3;
   }
 
   caption, tr, td, th {
@@ -759,6 +773,15 @@ a:focus, [tabindex="0"]:focus {
     grid-row: 5;
     grid-column: 3;
   }
+
+}
+
+ @media only screen and (min-width: 70em) {
+
+   .gloatpara {
+     grid-row: 3;
+     grid-column: 2 / span 2;
+   }
 
 }
 
