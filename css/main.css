@@ -496,12 +496,11 @@ a:focus, [tabindex="0"]:focus {
 
 /* ------------------------------------------Animation/Transition/SVG Section------------------------------------------ */
 
-.herobanner img {
+.hero-banner img {
   filter: grayscale(100%);
-  transition: all .2s linear;
+  transition: all .2s linear 5s;
 }
-
-.herobanner img:hover {
+.hero-banner img:hover {
   filter: grayscale(0);
 }
 
