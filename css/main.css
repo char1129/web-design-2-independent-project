@@ -73,7 +73,7 @@ header {
   display: grid;
   grid-template-areas: "hero-banner hero-banner hero-banner";
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 720px;
+  grid-template-rows: 1fr;
   width: 100%;
   overflow: hidden;
 }
@@ -91,7 +91,31 @@ ul li {
 
 /* ------------------------------------------Banner Section------------------------------------------ */
 
-.hero-banner {
+.hero-banner-S {
+  position: relative;
+  grid-column: 1 / -1;
+  grid-row: 1;
+  justify-content: center;
+  align-content: center;
+  min-width: 350px;
+  /* width: auto;
+  height: 100%; */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transform: translateX(-50%);
+  left: 50%;
+  margin: 0;
+  padding: 0;
+  min-height: 750px;
+  /* max-height: 750px; */
+  overflow: hidden;
+  filter: grayscale(100%);
+  transition: all .2s linear;
+}
+
+.hero-banner-L {
+  display: none;
   position: relative;
   grid-column: 1 / -1;
   grid-row: 1;
@@ -136,8 +160,15 @@ ul li {
   font-size: 1.5rem;
 }
 
-.hero-banner:hover,
-.hero-banner:focus {
+.hero-banner-S:hover,
+.hero-banner-S:focus {
+  filter: grayscale(0);
+
+  /* transform: scaleY(1.5); */
+}
+
+.hero-banner-L:hover,
+.hero-banner-L:focus {
   filter: grayscale(0);
 
   /* transform: scaleY(1.5); */
@@ -506,11 +537,19 @@ a:focus, [tabindex="0"]:focus {
 
 /* ------------------------------------------Animation/Transition/SVG Section------------------------------------------ */
 
-.hero-banner img {
+.hero-banner-S img {
   filter: grayscale(100%);
   transition: all .2s linear 5s;
 }
-.hero-banner img:hover {
+.hero-banner-S img:hover {
+  filter: grayscale(0);
+}
+
+.hero-banner-L img {
+  filter: grayscale(100%);
+  transition: all .2s linear 5s;
+}
+.hero-banner-L img:hover {
   filter: grayscale(0);
 }
 
@@ -586,6 +625,10 @@ a:focus, [tabindex="0"]:focus {
     line-height: 1.4;
   }
 
+  .hero-banner-S {
+    max-height: 750px;
+  }
+
   /* .flex-2 {
   display: block;
   width: 100%;
@@ -611,6 +654,14 @@ a:focus, [tabindex="0"]:focus {
 }
 
 @media only screen and (min-width: 60em) {
+
+  .hero-banner-S {
+    display: none;
+  }
+
+  .hero-banner-L {
+    display: block;
+  }
 
   h1 {
     font-size: 5rem;
@@ -687,7 +738,11 @@ a:focus, [tabindex="0"]:focus {
     width: 45%;
   } */
 
-  .hero-banner {
+  .hero-banner-S {
+    width: 100%;
+  }
+
+  .hero-banner-L {
     width: 100%;
   }
 
