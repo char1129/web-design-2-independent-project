@@ -136,6 +136,22 @@ ul li {
   transition: all .2s linear;
 }
 
+/* .hero-banner-gradient {
+  position: relative;
+  grid-column: 1 / -1;
+  grid-row: 1;
+  min-width: 350px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translateX(-50%);
+  left: 50%;
+  margin: 0;
+  padding: 0;
+  min-height: 750px;
+  z-index: 99;
+} */
+
 .banner {
   grid-area: banner;
   z-index: 100;
@@ -676,6 +692,11 @@ a:focus, [tabindex="0"]:focus {
     grid-template-rows: 1fr;
   }
 
+  main ul li {
+    max-width: 500px;
+    max-height: 500px;
+  }
+
   .movesh1 {
     grid-column: 1 / -1;
     grid-row: 1;
@@ -807,7 +828,6 @@ a:focus, [tabindex="0"]:focus {
     text-align: left;
   }
 
-
   .hide2 {
     display: inline-block;
   }
@@ -855,8 +875,8 @@ a:focus, [tabindex="0"]:focus {
   */
 
   main ul li {
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 300px;
+    max-height: 300px;
   }
 
   .logotop {
@@ -871,6 +891,10 @@ a:focus, [tabindex="0"]:focus {
   /* .flex li {
     width: 20%;
   } */
+
+  .hero-banner-L {
+    display: block;
+  }
 
   .hidden3 {
     grid-column: 2 / -1;
