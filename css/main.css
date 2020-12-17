@@ -309,6 +309,7 @@ p {
 .caption {
   font-size: .75rem;
   padding-bottom: 2rem;
+  hyphens: none;
 }
 
 .hidden1, .hidden2, .hidden3 {
@@ -456,21 +457,21 @@ vertical-align: bottom;
 
 /* ------------------------------------------Animation/Transition/SVG Section------------------------------------------ */
 
-.hero-banner-S img {
+.hero-banner-s img {
   filter: grayscale(100%);
   transition: all .2s linear 5s;
 }
 
-.hero-banner-S img:hover {
+.hero-banner-s img:hover {
   filter: grayscale(0);
 }
 
-.hero-banner-L img {
+.hero-banner-l img {
   filter: grayscale(100%);
   transition: all .2s linear 5s;
 }
 
-.hero-banner-L img:hover {
+.hero-banner-l img:hover {
   filter: grayscale(0);
 }
 
