@@ -9,6 +9,7 @@ nav {
   list-style-type: none;
   display: none;
   font-family: Montserrat, Helvetica, Arial, sans-serif;
+  z-index: 100;
 }
 
 .nav a {
