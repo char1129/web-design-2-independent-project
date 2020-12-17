@@ -4,6 +4,12 @@ html {
   line-height: 1.1;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 h1, h2 {
   font-family: 'Playfair Display', serif;
   margin: 0;
@@ -81,4 +87,26 @@ p {
 
 .indent {
   text-indent: 14px;
+}
+
+.tip, .tiptext {
+    font-size: .5rem;
+}
+
+@media only screen and (min-width: 25em) {
+
+@media only screen and (min-width: 38em) {
+.tip, .tiptext {
+  font-size: .75em;
+}
+
+@media only screen and (min-width: 60em) {
+.tip, .tiptext {
+  font-size: 1em;
+}
+
+@media only screen and (min-width: 90em) {
+.tip, .tiptext {
+  font-size: 1.2em;
+}
 }

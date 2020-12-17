@@ -58,6 +58,46 @@ nav a:focus,
     box-shadow: 10px 10px 12px 0px rgba(0,0,0,0.5);
 }
 
+.tip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tip .tiptext {
+  visibility: hidden;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+
+.tip:hover .tiptext {
+  visibility: visible;
+}
+
+a:focus,
+[tabindex="0"]:focus,
+details:focus,
+summary:focus,
+input:focus,
+textarea:focus,
+button:focus,
+select:focus {
+  outline: 3px solid #000;
+  outline-offset: 0;
+}
+
+a:focus, [tabindex="0"]:focus {
+  outline-offset: 3px;
+}
+
 /* stylelint-disable media-feature-name-no-unknown */
 
 @media (prefers-reduced-motion: reduced) {
@@ -67,6 +107,14 @@ nav a:focus,
   }
 
   .hero-banner-S, .hero-banner-L {
+    transition: none;
+  }
+
+  .banner {
+    transition: none;
+  }
+
+  main ul li {
     transition: none;
   }
 

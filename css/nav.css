@@ -17,10 +17,13 @@ nav {
 
 .nav a {
   display: block;
-  padding: 0 0.25em;
-  margin: 0;
+  padding: 5px;
+  margin: 0 .1em;
   text-decoration: none;
   border-style: inset;
+  color: #000;
+  background-color: #faf7f4;
+  border-radius: 5px;
 }
 
 .nav a:hover {
@@ -47,8 +50,8 @@ nav {
 .nav-check:checked ~ .nav {
   display: inline-flex;
   position: absolute;
-  top: 30px;
-  right: 70px;
+  top: 25px;
+  right: 60px;
 }
 
 .nav-label {
@@ -57,7 +60,7 @@ nav {
   width: 24px;
   height: 24px;
   display: inline-block;
-  top: 25px;
+  top: 27px;
   right: 25px;
 }
 
@@ -65,7 +68,12 @@ nav {
 .nav-close {
   display: block;
   width: 100%;
-  background-color: rgba(255, 0, 0, 0.0);
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 5px;
+}
+
+.nav-open {
+ border-style: outset;
 }
 
 .nav-close {
@@ -83,7 +91,7 @@ nav {
 }
 
 .nav ul li a {
-
+background-color: #fff;
 }
 
 
@@ -97,6 +105,20 @@ nav {
 .accnav ul li a:hover {
   border-style: inset;
   border-color: #EEE;
+  padding: 0 5px;
+
+}
+
+footer ul li {
+  display: inline-block;
+  padding: 0;
+  border-style: outset;
+  border-color: #EEE;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 5px;
+  /* width: auto;
+  justify-content: space-between;
+  text-align: center; */
 }
 
 
