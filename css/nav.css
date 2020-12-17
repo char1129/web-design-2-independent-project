@@ -96,10 +96,18 @@ background-color: #faf7f4;
   position: absolute;
   top: 30px;
   right: 70px;
-  display: none;
+  display: inline-block;
+  z-index: 5;
 }
 
 .accnav ul li a:hover {
+  border-style: inset;
+  border-color: #faf7f4;
+  padding: 0 5px;
+
+}
+
+.accnav ul li a:active {
   border-style: inset;
   border-color: #faf7f4;
   padding: 0 5px;
