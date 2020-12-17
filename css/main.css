@@ -48,8 +48,6 @@ img {
   width: 100%;
   margin: 0;
   padding: 0;
-
-  /* background-color: #000; */
 }
 
 body {
@@ -289,8 +287,6 @@ main {
 p {
   grid-column: 1 / -1;
   grid-row: 1 / span -1;
-
-  /* padding-bottom: 1.2rem; */
   align-self: baseline;
 }
 
@@ -300,8 +296,6 @@ p {
   grid-column: 1;
   grid-row: 3;
   display: inline;
-
-  /* width: 100%; */
 }
 
 .movefeatureimgs {
@@ -340,8 +334,6 @@ p {
 }
 
 section ul {
-  /* flex-direction: row;
-  flex-wrap: nowrap; */
   padding: 0;
   margin: 0;
 }
@@ -390,8 +382,8 @@ legend {
 
 .tablemove {
   padding-bottom: 3rem;
-  grid-column: ;
-  grid-row:
+  /* grid-column: ;
+  grid-row: ;*/
 }
 
 /* ------------------------------------------Footer Section------------------------------------------ */
@@ -515,7 +507,6 @@ filter:grayscale(0);
   100% {
     transform: scale(1.1);
   }
-}
 
 }
 
@@ -523,26 +514,19 @@ filter:grayscale(0);
   display: inline-block;
 }
 
-div .point {
-  display: inline-block;
-}
-
 .point {
-  animation: point .5s linear infinite;
+  display: none;
+  animation: point 2s linear infinite;
+  padding: 0;
+  border: none;
 }
 
-.point:hover #arrow {
-  /* animation: arrow .5s linear infinite; */
-  transform: translateY(70%);
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: ease-in-out;
+.point #arrow {
+  animation: arrow 2s linear infinite;
 }
 
 #arrow {
-  transform: translateY(0);
-  transition: all .5s linear;
-  animation-iteration-count: infinite;
+  transition: all 2s linear;
 }
 
 @keyframes arrow {
@@ -553,6 +537,7 @@ div .point {
 
   50% {
     transform:translateY(70%);
+    transform: rotate(-90deg);
   }
 
   100% {
@@ -675,6 +660,10 @@ div .point {
     display: inline-block;
 }
 
+.point {
+  display: none;
+}
+
 @media only screen and (min-width: 38em) {
 
   html {
@@ -699,6 +688,9 @@ div .point {
     display: inline-block;
   }
 
+  .point {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 60em) {
@@ -772,9 +764,6 @@ div .point {
     font-weight: normal;
   }
 
-  .span {
-    colspan: 0;
-  }
   .featuredwork {
     grid-column: 1 / -1;
     grid-row: 3;
@@ -881,6 +870,12 @@ div .point {
     grid-column: 1;
   }
 
+  .point {
+    display: inline-block;
+    padding-right: 1rem;
+    padding-bottom: .25rem;
+  }
+
 }
 
  @media only screen and (min-width: 70em) {
@@ -893,89 +888,81 @@ div .point {
 }
 
 @media only screen and (min-width: 90em) {
-  /*
-  html {
-    font-size: 140%;
-    line-height: 1.4;
-  }
-  */
 
-  .hero-banner-L {
-    display: block;
-  }
+.hero-banner-L {
+  display: block;
+}
 
-  .hidden3 {
-    grid-column: 2 / -1;
-    grid-row: 1;
-    display: inline-block;
-  }
+.hidden3 {
+  grid-column: 2 / -1;
+  grid-row: 1;
+  display: inline-block;
+}
 
-  h1 {
-    font-size: 6rem;
-  }
+h1 {
+  font-size: 6rem;
+}
 
-  h2 {
-    font-size: 3rem;
-  }
+h2 {
+  font-size: 3rem;
+}
 
-  main {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+main {
+  grid-template-columns: 1fr 1fr 1fr;
+}
 
-  .movesh1 {
-    grid-column: 1 / span 2;
-  }
+.movesh1 {
+  grid-column: 1 / span 2;
+}
 
-  .move2column {
-    grid-row: 1;
-    grid-column: 2 / span 2;
-  }
+.move2column {
+  grid-row: 1;
+  grid-column: 2 / span 2;
+}
 
-  .featuredwork {
-    grid-column: 1;
-    grid-row: 3;
-    vertical-align: top;
-  }
+.featuredwork {
+  grid-column: 1;
+  grid-row: 3;
+  vertical-align: top;
+}
 
-  .movefeatureimgs {
-    grid-column: 2 / span 2;
-    grid-row: 3;
-  }
+.movefeatureimgs {
+  grid-column: 2 / span 2;
+  grid-row: 3;
+}
 
-  .email {
-    grid-column: 1;
-    grid-row: 6;
-  }
+.email {
+  grid-column: 1;
+  grid-row: 6;
+}
 
-  main ul li {
-    width: 24%;
-  }
+main ul li {
+  width: 24%;
+}
 
-  .galleryh4-1b {
-    grid-column: 2 / span 2;
-    grid-row: 2;
-  }
+.galleryh4-1b {
+  grid-column: 2 / span 2;
+  grid-row: 2;
+}
 
-  .galleryh4-2 {
-    grid-row: 3;
-  }
+.galleryh4-2 {
+  grid-row: 3;
+}
 
-  .galleryh4-2b {
-    grid-column: 2 / span 2;
-    grid-row: 3;
-  }
+.galleryh4-2b {
+  grid-column: 2 / span 2;
+  grid-row: 3;
+}
 
-  .galleryh4-2b ul li {
-    width: 32%;
-  }
+.galleryh4-2b ul li {
+  width: 32%;
+}
 
-  .gallery-seemore {
-    grid-row: 5;
-    display: block;
-  }
+.gallery-seemore {
+  grid-row: 5;
+  display: block;
+}
 
-  .seemore-label {
-    display: none;
-  }
-
+.seemore-label {
+  display: none;
 }
