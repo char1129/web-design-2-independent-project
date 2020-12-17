@@ -332,7 +332,7 @@ p {
 }
 
 .wantmore {
-  grid-row: 6;
+  grid-row: 7;
   grid-column: 1;
 }
 
@@ -358,11 +358,23 @@ section ul {
   text-align: center;
 }
 
+.social-box {
+  grid-row: 6;
+}
+
+.social-box li a img {
+  width: 40%;
+  align-items: center;
+  text-align: center;
+  display: inline-block;
+}
+}
+
 /* ------------------------------------------Contact Form Section------------------------------------------ */
 
 aside {
   grid-area: email;
-  grid-row: 7;
+  grid-row: 8;
   grid-column: 1;
 }
 
