@@ -397,7 +397,7 @@ footer {
   grid-column: 1 / -1;
   grid-row: 3;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   align-items: end;
 }
 
@@ -703,6 +703,10 @@ main ul li:hover {
     display: none;
   }
 
+  footer {
+    grid-template-columns: 1fr 1fr;
+  }
+
 }
 
 @media only screen and (min-width: 60em) {
@@ -750,6 +754,14 @@ main ul li:hover {
 
   .hidetable {
     display: block;
+  }
+
+  table tr td {
+    padding-right: 1rem;
+  }
+
+  table tr th {
+    padding-right: 1rem;
   }
 
   .hide {
