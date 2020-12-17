@@ -96,7 +96,7 @@ background-color: #faf7f4;
   position: absolute;
   top: 30px;
   right: 70px;
-  display: inline-block;
+  display: none;
   z-index: 5;
 }
 
@@ -107,12 +107,7 @@ background-color: #faf7f4;
 
 }
 
-.accnav ul li a:active {
-  border-style: inset;
-  border-color: #faf7f4;
-  padding: 0 5px;
-
-}
+/* ACCNAV IS SOLEY FOR MARKBOT PASS. VISIBLE NAV IS ACTUAL NAVIGATION FOR PAGE */
 
 .footer-nav {
   grid-column: 1;
