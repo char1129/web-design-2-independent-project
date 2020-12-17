@@ -5,10 +5,6 @@ nav {
   z-index: 100;
 }
 
-/* nav ul li {
-  float: left;
-} */
-
 .nav {
   list-style-type: none;
   display: none;
@@ -28,18 +24,18 @@ nav {
 
 .nav a:hover {
   background-color: #333;
-  color: #fff;
+  color: #faf7f4;
 }
 
 .nav a:focus {
   background-color: #333;
-  color: #fff;
+  color: #faf7f4;
 }
 
 .nav a:active,
 ::after {
   background-color: #333;
-  color: #fff;
+  color: #faf7f4;
 }
 
 .nav-check {
@@ -91,7 +87,7 @@ nav {
 }
 
 .nav ul li a {
-background-color: #fff;
+background-color: #faf7f4;
 }
 
 
@@ -104,21 +100,31 @@ background-color: #fff;
 
 .accnav ul li a:hover {
   border-style: inset;
-  border-color: #EEE;
+  border-color: #faf7f4;
   padding: 0 5px;
 
+}
+
+.footer-nav {
+  grid-column: 1;
+  grid-row: 1;
+  padding-left: 1rem;
+  padding-bottom: .25rem;
+}
+
+.footer-nav li a {
+  font-size: .8rem;
+  text-decoration: none;
+  color: #000;
 }
 
 footer ul li {
   display: inline-block;
   padding: 0;
-  border-style: outset;
-  border-color: #EEE;
-  background-color: rgba(255, 255, 255, 0.75);
-  padding: 5px;
-  /* width: auto;
-  justify-content: space-between;
-  text-align: center; */
+  border: 2pt #000 solid;
+  border-radius: 5px;
+  background-color: #faf7f4;
+  padding: 0 5px 3px;
 }
 
 
@@ -140,11 +146,6 @@ footer ul li {
 
 @media only screen and (min-width: 60em) {
 
-  /* .nav-label {
-    width: 52px;
-    height: 52px;
-  } */
-
   .nav {
     right: 100px;
     top: 45px;
@@ -159,11 +160,6 @@ footer ul li {
 }
 
 @media only screen and (min-width: 90em) {
-
-  /* .nav-label {
-    width: 64px;
-    height: 64px;
-  } */
 
   .nav {
     right: 100px;

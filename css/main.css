@@ -138,22 +138,6 @@ ul li {
   transition: all .2s linear;
 }
 
-/* .hero-banner-gradient {
-  position: relative;
-  grid-column: 1 / -1;
-  grid-row: 1;
-  min-width: 350px;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transform: translateX(-50%);
-  left: 50%;
-  margin: 0;
-  padding: 0;
-  min-height: 750px;
-  z-index: 99;
-} */
-
 .banner {
   grid-area: banner;
   z-index: 100;
@@ -166,7 +150,6 @@ ul li {
   padding: 10px 25px 15px;
   border-radius: 10px;
   background: rgba(255, 255, 255, .5);
-  /* border-style: outset; */
 }
 
 .banner h3 {
@@ -182,15 +165,11 @@ ul li {
 .hero-banner-S:hover,
 .hero-banner-S:focus {
   filter: grayscale(0);
-
-  /* transform: scaleY(1.5); */
 }
 
 .hero-banner-L:hover,
 .hero-banner-L:focus {
   filter: grayscale(0);
-
-  /* transform: scaleY(1.5); */
 }
 
 h2 {
@@ -243,11 +222,6 @@ label {
 }
 
 /*  ------------------------------------ Gallary ------------------------------ */
-
-/* .seemore-check:checked ~ .galleryh4-3 {
-display: block;
-grid-row: 5;
-} */
 
 .galleryh3-1 {
   padding-bottom: 2rem;
@@ -336,6 +310,11 @@ p {
   text-align: center;
 }
 
+.caption {
+  font-size: .75rem;
+  padding-bottom: 2rem;
+}
+
 .hidden1, .hidden2, .hidden3 {
   display: none;
 }
@@ -344,16 +323,7 @@ p {
   grid-row: 5;
 }
 
-/* .flex-2 {
-  grid-row: 6;
-} */
-
 /* ------------------------------------------Social Media Section------------------------------------------ */
-
-/* .social {
-  max-width: 150px;
-  padding: 0 .25em;
-} */
 
 .social-section {
   grid-area: social;
@@ -414,11 +384,6 @@ legend {
   text-transform: uppercase;
 }
 
-/* .form-space {
-margin: 0;
-padding: 0 0 10px;
-} */
-
 .note {
   width: 100%;
 }
@@ -440,10 +405,29 @@ footer {
   align-items: end;
 }
 
-.footer-nav {
-  grid-column: 1;
-  grid-row: 1;
+.footer-social {
+  display: none;
+  grid-column: 2;
+  justify-self: end;
+  padding-right: 1rem;
 }
+
+.footer-social li a img {
+  width: 50%;
+  background-color: #faf7f4;
+}
+
+.social-small {
+  border-style: none;
+}
+
+/* .logosmall {
+  width: 50px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  vertical-align: bottom;
+} */
 
 /* ------------------------------------------Button Section------------------------------------------ */
 
@@ -474,80 +458,6 @@ footer {
   color: #fff;
   border-style: inset;
 }
-
-/* button,
-.btn {
-  cursor: pointer;
-  display: inline-block;
-  margin: 0;
-  overflow: visible;
-  padding: .375em .75em .42em;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-color: #333;
-  border-radius: 4px;
-  border: 3px solid #333;
-  color: #fff;
-  font: inherit;
-  text-decoration: none;
-  text-transform: none;
-}
-
-button::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
-button:focus,
-button:hover,
-.btn:focus,
-.btn:hover {
-  background-color: rgba(102, 153, 127, .4);
-  border-color: #000;
-  color: #fff;
-  transition: opacity .3s ease-in;
-  transition-delay: 1s;
-}
-
-button[disabled] {
-  cursor: default;
-}
-
-.btn-ghost {
-  font-family: Montserrat, Arial, sans-serif;
-  text-transform: uppercase;
-  background-color: transparent;
-  font-size: .75rem;
-  border-color: rgba(102, 153, 127, .4);
-  color: #000;
-}
-
-.btn-ghost:focus,
-.btn-ghost:hover {
-  background-color: rgba(102, 153, 127, .4);
-  border-color: #000;
-  color: #000;
-}
-
-.btn-link {
-  display: inline;
-  padding: 0;
-  background-color: transparent;
-  border-radius: 0;
-  border: 0;
-  color: inherit;
-}
-
-.btn-link:focus,
-.btn-link:hover {
-  background-color: transparent;
-  color: inherit;
-}
-
-a:hover, a:active {
-  outline: none;
-} */
 
 /* ------------------------------------------Animation/Transition/SVG Section------------------------------------------ */
 
@@ -605,6 +515,50 @@ filter:grayscale(0);
   100% {
     transform: scale(1.1);
   }
+}
+
+}
+
+.arrowrow div {
+  display: inline-block;
+}
+
+div .point {
+  display: inline-block;
+}
+
+.point {
+  animation: point .5s linear infinite;
+}
+
+.point:hover #arrow {
+  /* animation: arrow .5s linear infinite; */
+  transform: translateY(70%);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+#arrow {
+  transform: translateY(0);
+  transition: all .5s linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes arrow {
+
+  0% {
+    transform:translateY(0);
+  }
+
+  50% {
+    transform:translateY(70%);
+  }
+
+  100% {
+    transform:translateY(0);
+  }
+
 
 }
 
@@ -717,6 +671,8 @@ filter:grayscale(0);
     padding-bottom: 3rem;
   }
 
+  .footer-social {
+    display: inline-block;
 }
 
 @media only screen and (min-width: 38em) {
@@ -734,20 +690,6 @@ filter:grayscale(0);
     width: 40px;
     height: 40px;
   }
-
-  /* .flex-2 {
-  display: block;
-  width: 100%;
-  } */
-
-  /* .flex {
-    width: 100%;
-  }
-
-  .flex li {
-    display: inline-block;
-    width: 25%;
-  } */
 
   main ul li {
     width: 33%;
@@ -768,11 +710,6 @@ filter:grayscale(0);
   .hero-banner-L {
     display: block;
   }
-/*
-  .logotop {
-    width: 52px;
-    height: 52px;
-  } */
 
   h1 {
     font-size: 5rem;
@@ -849,23 +786,12 @@ filter:grayscale(0);
     grid-row: 3;
   }
 
-  /* main ul li {
-    width: 45%;
-  } */
-
   .hero-banner-S {
     width: 100%;
   }
 
   .hero-banner-L {
     width: 100%;
-  }
-
-  .hidetext {
-    display: block;
-    grid-row: 5;
-    /* grid-row: 1 / span 2;
-    grid-row: 6; */
   }
 
   .hidden2 {
@@ -934,13 +860,25 @@ filter:grayscale(0);
     grid-row: 3;
   }
 
+  .hidetext {
+    display: block;
+    grid-row: 5;
+    grid-column: 1;
+  }
+
+  .hidetext p {
+    hyphens: none;
+  }
+
   .wantmore {
-    grid-row: 4;
+    grid-row: 5;
+    grid-column: 2 / span 2;
+    text-align: center;
   }
 
   .email {
-    grid-row: 5;
-    grid-column: 3;
+    grid-row: 6;
+    grid-column: 1;
   }
 
 }
@@ -961,30 +899,6 @@ filter:grayscale(0);
     line-height: 1.4;
   }
   */
-
-  /*
-  p {
-  font-size: 2rem;
-  }
-  */
-
-  /* main ul li {
-    max-width: 300px;
-    max-height: 300px;
-  } */
-
-  /* .logotop {
-    width: 64px;
-    height: 64px;
-  } */
-
-  /* .flex {
-    width: 100%;
-  } */
-
-  /* .flex li {
-    width: 20%;
-  } */
 
   .hero-banner-L {
     display: block;
