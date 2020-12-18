@@ -363,11 +363,15 @@ section ul {
 }
 
 .social-box li a img {
-  width: 40%;
   align-items: center;
   text-align: center;
   display: inline-block;
 }
+
+section ul li a {
+  width: 5%;
+}
+
 }
 
 /* ------------------------------------------Contact Form Section------------------------------------------ */
@@ -489,7 +493,7 @@ vertical-align: bottom;
 
 main ul li {
   filter: grayscale(1);
-  width: 100%;
+  /* width: 100%; */
   padding: 0 1rem 1rem 0;
 }
 
@@ -617,6 +621,10 @@ main ul li:hover {
     width: 45%;
   }
 
+  section ul li {
+    width: 15%;
+  }
+
   .galleryh4-1 {
     grid-row: 2;
     grid-column: 1;
@@ -706,6 +714,10 @@ main ul li:hover {
 
   main ul li {
     width: 33%;
+  }
+
+  section ul li {
+    width: 10%;
   }
 
   .hide1 {
