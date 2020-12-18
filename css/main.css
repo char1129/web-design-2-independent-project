@@ -318,6 +318,7 @@ p {
 
 .socialheader {
   grid-row: 5;
+  padding-bottom: 2rem;
 }
 
 /* ------------------------------------------Social Media Section------------------------------------------ */
