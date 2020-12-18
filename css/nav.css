@@ -122,6 +122,11 @@ background-color: #faf7f4;
   color: #000;
 }
 
+.footer-nav li:hover {
+  border: none;
+  font-weight: bold;
+}
+
 footer ul li {
   display: inline-block;
   padding: 0;
